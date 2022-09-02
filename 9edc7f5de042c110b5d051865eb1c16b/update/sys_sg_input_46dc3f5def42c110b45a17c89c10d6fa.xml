@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_input">
+    <sys_sg_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <autofill_variable display_value="return_date">86dc3f5d6642c11081f9544a013fcbfa</autofill_variable>
+        <category/>
+        <description/>
+        <label>Return date</label>
+        <mandatory>false</mandatory>
+        <name>return_date</name>
+        <order>40</order>
+        <page/>
+        <parameter_screen display_value="Request item">42dc3f5d4442c110087980b46c410bfa</parameter_screen>
+        <parameter_section/>
+        <placeholder/>
+        <readonly>false</readonly>
+        <sys_class_name>sys_sg_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:25</sys_created_on>
+        <sys_id>46dc3f5def42c110b45a17c89c10d6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Return date</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_input_46dc3f5def42c110b45a17c89c10d6fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:25</sys_updated_on>
+        <type display_value="Date/Time">2c0c605517021010f2b43b9fadb9590a</type>
+    </sys_sg_input>
+</record_update>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_trackit.max gr lookup</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>max gr lookup</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+"name": "name",&#13;
+"label": "the field",&#13;
+"fieldType":"string",&#13;
+"readOnly":false&#13;
+}&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "the field",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input){
+	var myArr = [];
+
+
+	var gr = new GlideRecord("x_snc_trackit_stock_location");
+	gr.addEncodedQuery('active=true');
+	gr.query();
+
+	while(gr.next()){
+		var items = {};
+		items.id = gr.getValue('sys_id');
+		items.label = gr.getValue('name');
+		myArr.push(items);
+	}
+
+	return myArr;
+}
+
+
+
+]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-17 13:52:36</sys_created_on>
+        <sys_id>37b957498767c510b2af64e73cbb354b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>max gr lookup</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_37b957498767c510b2af64e73cbb354b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-02 14:32:17</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=37b957498767c510b2af64e73cbb354b"/>
+</record_update>

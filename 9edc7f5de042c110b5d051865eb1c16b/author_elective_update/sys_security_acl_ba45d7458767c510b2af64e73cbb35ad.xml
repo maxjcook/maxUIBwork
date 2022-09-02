@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Allow read for all fields in x_snc_trackit_stock_location, for users with role public.</description>
+        <name>x_snc_trackit_stock_location.*</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-17 13:29:02</sys_created_on>
+        <sys_id>ba45d7458767c510b2af64e73cbb35ad</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_snc_trackit_stock_location.*</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_security_acl_ba45d7458767c510b2af64e73cbb35ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-19 15:47:10</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</application>
+        <file_path/>
+        <instance_id>18a33396db344910a667cac505961926</instance_id>
+        <instance_name>empmcook1</instance_name>
+        <name>sys_security_acl_ba45d7458767c510b2af64e73cbb35ad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Allow read for all fields in x_snc_trackit_stock_location, for users with role public.</description><name>x_snc_trackit_stock_location.*</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-17 13:29:02</sys_created_on><sys_id>ba45d7458767c510b2af64e73cbb35ad</sys_id><sys_mod_count>3</sys_mod_count><sys_name>x_snc_trackit_stock_location.*</sys_name><sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package><sys_policy/><sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope><sys_update_name>sys_security_acl_ba45d7458767c510b2af64e73cbb35ad</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-19 15:47:10</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>1411081624</payload_hash>
+        <record_name>x_snc_trackit_stock_location.*</record_name>
+        <reverted_from/>
+        <source>71ecf3d1970ac1101d7f796e6253af45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-19 15:47:10</sys_created_on>
+        <sys_id>9c7a7bd3979d91101d7f796e6253afe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182b6c96e250000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-19 15:47:10</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>d47a7bd3cf9d91102b42ddd262a17de3</update_guid>
+        <update_guid_history>d47a7bd3cf9d91102b42ddd262a17de3:1411081624,152c57c9c467c5108ee381e17ffb3003:-2108021761,838953498667c51079f7b6a1d238b947:1411081624,a8659b456567c51023f7b923d8a66643:1258665134</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-19 15:47:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>9e95b2c0417648189a2576da65c7a261</sys_id>
+        <sys_metadata>ba45d7458767c510b2af64e73cbb35ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_trackit_stock_location.*</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_parent display_value="x_snc_trackit_stock_location">2adc7f5d8742c110b2af64e73cbb35b9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_scope_delete display_value="">067c889654494c7582336149eaee9749</sys_scope_delete>
+        <sys_update_name>sys_security_acl_ba45d7458767c510b2af64e73cbb35ad</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_ba45d7458767c510b2af64e73cbb35ad">9c7a7bd3979d91101d7f796e6253afe3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-19 15:47:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

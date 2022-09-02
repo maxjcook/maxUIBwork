@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_input">
+    <sys_sg_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <autofill_variable display_value="name">cadc3f5d9142c110492b42dc8e2791fb</autofill_variable>
+        <category/>
+        <description/>
+        <label>Requested item</label>
+        <mandatory>false</mandatory>
+        <name>name</name>
+        <order>20</order>
+        <page/>
+        <parameter_screen display_value="Request item">42dc3f5d4442c110087980b46c410bfa</parameter_screen>
+        <parameter_section/>
+        <placeholder/>
+        <readonly>false</readonly>
+        <sys_class_name>sys_sg_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:48</sys_created_on>
+        <sys_id>8adc3f5d5742c11094493e9f2412fafb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requested item</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_input_8adc3f5d5742c11094493e9f2412fafb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:48</sys_updated_on>
+        <type display_value="Reference">770c605517021010f2b43b9fadb95900</type>
+    </sys_sg_input>
+</record_update>

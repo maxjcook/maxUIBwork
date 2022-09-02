@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Inventory Tracker Portal App Config Config">82dc7f5d4e42c110d9881ac3e0f94751</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "ckhqglrcffaaaacciddhhhrsaaaazczca",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_snc_trackit.NAV_ITEM_SELECTED_RELAY_0edc7f5d0342c1101a50b8aaf9e39720",
+  "sourceEventDefinition" : {
+    "apiName" : "x_snc_trackit.NAV_ITEM_SELECTED_RELAY_0edc7f5d0342c1101a50b8aaf9e39720",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "route" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "route" ]
+            }
+          },
+          "fields" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "fields" ]
+            }
+          },
+          "params" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "params" ]
+            }
+          },
+          "redirect" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "redirect" ]
+            }
+          },
+          "passiveNavigation" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "passiveNavigation" ]
+            }
+          },
+          "title" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "title" ]
+            }
+          },
+          "multiInstField" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "multiInstField" ]
+            }
+          },
+          "targetRoute" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "targetRoute" ]
+            }
+          },
+          "external" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "external" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
+    },
+    "operation" : null,
+    "targetId" : "ckhqglrcffaaaacchddhhhrtwhhleerby",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="New and restocked">0edc7f5d0342c1101a50b8aaf9e39720</macroponent>
+        <macroponent_config>{
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>New and restocked Default</name>
+        <order>0</order>
+        <parent_macroponent display_value="home">82dc7f5d7e42c110007f9e6b65b15a20</parent_macroponent>
+        <required_translations>[]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="New and restocked">42dc7f5d9042c110743de26792a50624</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>06dc7f5de742c110f88e0efe767a500c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New and restocked Default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_screen_06dc7f5de742c110f88e0efe767a500c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:36</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=06dc7f5de742c110f88e0efe767a500c"/>
+</record_update>

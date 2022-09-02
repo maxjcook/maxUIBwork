@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Discontinue item</name>
+        <parent_macroponent display_value="Record">46dc7f5dc742c11048719601fd9bdd1f</parent_macroponent>
+        <source_da display_value="DISCONTINUE_ITEM">46dc7f5da442c110878c46167d919f38</source_da>
+        <source_element_id>ui_action_bar</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>86dc7f5df642c110b061229041496820</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Discontinue item</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_86dc7f5df642c110b061229041496820</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:56</sys_updated_on>
+        <target_event display_value="Discontinue item">c6dc7f5da842c110e2fbca4cfefdc320</target_event>
+        <target_payload_mapping/>
+    </sys_ux_addon_event_mapping>
+</record_update>

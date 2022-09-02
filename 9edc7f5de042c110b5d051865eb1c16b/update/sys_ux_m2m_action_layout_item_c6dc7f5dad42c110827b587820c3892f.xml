@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_action_layout_item">
+    <sys_ux_m2m_action_layout_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <sys_class_name>sys_ux_m2m_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:26</sys_created_on>
+        <sys_id>c6dc7f5dad42c110827b587820c3892f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_m2m_action_layout_item_c6dc7f5dad42c110827b587820c3892f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:26</sys_updated_on>
+        <table>x_snc_trackit_inventory_control</table>
+        <ux_form_action_layout display_value="Discontinue item layout">82dc7f5d6e42c110f8057f3ac4efbe2e</ux_form_action_layout>
+        <ux_form_action_layout_item display_value="Discontinue">06dc7f5dbe42c110e77d546ad690be2e</ux_form_action_layout_item>
+    </sys_ux_m2m_action_layout_item>
+</record_update>

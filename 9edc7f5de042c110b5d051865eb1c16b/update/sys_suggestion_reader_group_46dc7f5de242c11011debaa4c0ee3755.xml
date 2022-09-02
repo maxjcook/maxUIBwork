@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group">
+    <sys_suggestion_reader_group action="INSERT_OR_UPDATE">
+        <click_in_mode>false</click_in_mode>
+        <context_config_id display_value="x_snc_trackit - Inventory tracker portal search">8adc3f5d7242c1109f5bd88004459fd2</context_config_id>
+        <limit>5</limit>
+        <order>400</order>
+        <section_header>Suggested results</section_header>
+        <suggestion_type>Suggested Result Reader Group for Inventory tracker portal search</suggestion_type>
+        <sys_class_name>sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2021-06-21 08:46:17</sys_created_on>
+        <sys_id>46dc7f5de242c11011debaa4c0ee3755</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Suggested Result Reader Group for Inventory tracker portal search</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy>null</sys_policy>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_suggestion_reader_group_46dc7f5de242c11011debaa4c0ee3755</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2021-06-21 08:46:17</sys_updated_on>
+    </sys_suggestion_reader_group>
+</record_update>

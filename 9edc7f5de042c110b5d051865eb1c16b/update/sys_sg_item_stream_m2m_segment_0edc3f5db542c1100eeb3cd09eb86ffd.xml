@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_segment">
+    <sys_sg_item_stream_m2m_segment action="INSERT_OR_UPDATE">
+        <item_stream display_value="Browse Catalog Item Stream">4adc3f5d2d42c110493043f11f0e0cfc</item_stream>
+        <segment display_value="Item Stream Segment">4edc3f5d5042c1106f236f1c026de9fd</segment>
+        <sys_class_name>sys_sg_item_stream_m2m_segment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:37</sys_created_on>
+        <sys_id>0edc3f5db542c1100eeb3cd09eb86ffd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_segment_0edc3f5db542c1100eeb3cd09eb86ffd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:37</sys_updated_on>
+    </sys_sg_item_stream_m2m_segment>
+</record_update>

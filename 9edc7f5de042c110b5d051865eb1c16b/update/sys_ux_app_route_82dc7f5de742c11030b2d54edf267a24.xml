@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Inventory Tracker Portal App Config Config">82dc7f5d4e42c110d9881ac3e0f94751</app_config>
+        <description/>
+        <fields/>
+        <icon/>
+        <name>New and restocked</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="home">82dc7f5d7e42c110007f9e6b65b15a20</parent_macroponent>
+        <parent_macroponent_composition_element_id>tab_set_1</parent_macroponent_composition_element_id>
+        <route_type>new-and-restocked</route_type>
+        <screen_type display_value="New and restocked">42dc7f5d9042c110743de26792a50624</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:32</sys_created_on>
+        <sys_id>82dc7f5de742c11030b2d54edf267a24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New and restocked</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_app_route_82dc7f5de742c11030b2d54edf267a24</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:32</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=82dc7f5de742c11030b2d54edf267a24"/>
+</record_update>

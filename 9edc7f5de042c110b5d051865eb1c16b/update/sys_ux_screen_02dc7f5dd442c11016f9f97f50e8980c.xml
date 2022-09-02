@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Inventory Tracker workspace App Config Config">42dc7f5d1042c110a47b27aac749614f</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Attachment">cadc7f5dbc42c11099b59921e06d052f</macroponent>
+        <macroponent_config>{
+  "table" : "@data.gform.nowRecordFormBlob.table",
+  "sysId" : "@data.gform.nowRecordFormBlob.sysId",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false,
+  "views" : "workspace",
+  "selectedTabIndex" : 0
+}</macroponent_config>
+        <name>Attachment default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Record">46dc7f5dc742c11048719601fd9bdd1f</parent_macroponent>
+        <required_translations>[]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Attachments">42dc7f5dd842c1105f7be0eb423e0025</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>02dc7f5dd442c11016f9f97f50e8980c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attachment default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_screen_02dc7f5dd442c11016f9f97f50e8980c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:44</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=02dc7f5dd442c11016f9f97f50e8980c"/>
+</record_update>

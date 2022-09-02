@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <last_registered_on>2022-06-08 17:55:42</last_registered_on>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-11 17:33:08</sys_created_on>
+        <sys_id>cfba8763970245101d7f796e6253af01</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>799BE789F9556DD72A523D4BE6EE20BCC6D3E62674201078C6CC399D08E1E19B</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Request Application">ac7f61d273122300d63a566a4cf6a78b</sys_push_application_id>
+        <sys_push_platform_id display_value="Apple">20e71f30ff0002009738ffffffffff6b</sys_push_platform_id>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_cfba8763970245101d7f796e6253af01</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-08 17:55:54</sys_updated_on>
+        <sys_user_id display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</sys_user_id>
+        <token>799BE789F9556DD72A523D4BE6EE20BCC6D3E62674201078C6CC399D08E1E19B</token>
+    </sys_push_notif_app_install>
+</record_update>

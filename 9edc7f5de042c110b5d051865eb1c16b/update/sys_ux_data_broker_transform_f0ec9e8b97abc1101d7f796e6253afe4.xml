@@ -1,0 +1,2186 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_trackit.Max Form DB</api_name>
+        <description>build object to return fields and sections</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Max Form DB</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input){
+
+	var sectionOBJ = {
+
+
+		"globals": {
+			"g_scratchpad": "{}",
+			"g_language": "en",
+			"g_date_time_format": "yyyy-MM-dd HH:mm:ss",
+			"g_decimal_separator": ".",
+			"g_user_grouping": ",",
+			"g_text_direction": "ltr",
+			"g_is_accessible": false
+		},
+		"uiPolicies": [],
+		"clientScripts": {
+			"onLoad": [],
+			"onChange": [],
+			"onSubmit": [
+				{
+					"name": "workspace_onDomainChangeConfirm",
+					"sysId": "08da61080f0700102a001271ff767ebc",
+					"script": "function onSubmit() {\n\t\n\tif (typeof g_aw === 'undefined' || !g_aw.domainScopeProvider || typeof g_scratchpad === 'undefined') return true;\n\tif (g_scratchpad._domainConfirmationPassed\n\t\t|| g_scratchpad._domainCheckErrorBypass\n\t\t|| g_scratchpad._domainCheckPassed)\n\t\treturn true;\n\tvar provider = g_aw.domainScopeProvider();\n\t\n\tif (!provider || !provider.isDomainEnabledRecord || !provider.isDomainEnabledRecord()) return true;\n\tvar title = getMessage(\"Change Domain\");\n\tvar message = getMessage(\"You are about to change the domain of this record which may result in data loss. We will copy the information we can but you may need to replace the lost data. Do you want to proceed?\");\n\t\n\tvar gFormRef = g_form;\n\t\n\tvar popModalConfirm = function() {\n\t\tg_modal.confirm(title, message , function(response) {\n\t\t\tif (response) {\n\t\t\t\tg_scratchpad._domainConfirmationPassed = true;\n\t\t\t\tgFormRef.submit(gFormRef.getActionName());\n\t\t\t}\n\t\t});\n\t\treturn false;\n\t};\n\t\n\tvar proceedWithSubmit = function() {\n\t\tgFormRef.submit(gFormRef.getActionName());\n\t};\n\t\n\tvar hasDomainChanged = provider.hasDomainChanged();\n\tif (hasDomainChanged === false) \n\t\treturn true;\n\tif (hasDomainChanged === true)\n\t\treturn popModalConfirm();\n\telse {\n\t\thasDomainChanged.then(function(isChanged) {\n\t\t\tif (isChanged)\n\t\t\t\treturn popModalConfirm();\n\t\t\telse {\n\t\t\t\tg_scratchpad._domainCheckPassed = true;\n\t\t\t\tproceedWithSubmit();\n\t\t\t}\n\t\t}, function(error) {\n\t\t\tg_scratchpad._domainCheckErrorBypass = true;\n\t\t\tproceedWithSubmit();\n\t\t});\n\t\treturn false;\n\t}\n}\n",
+					"type": "onSubmit",
+					"fieldName": "sys_created_on",
+					"tableName": "global"
+				}
+			]
+		},
+		"messages": [],
+		"canCreate": true,
+		"docViewerEnabled": true,
+		"declarativeFieldActions": {
+			"department": [
+				{
+					"name": "list_ref_search",
+					"icon": "magnifying-glass-outline",
+					"label": "Search for Record",
+					"dependency": "",
+					"requiresValue": false,
+					"order": 0,
+					"conditions": "",
+					"actionType": "uxf_client_action",
+					"actionComponent": "",
+					"actionDispatch": "REF_SEARCH_REQUESTED",
+					"actionPayload": "{\r\n  \"referenceField\": \"{{fieldName}}\",\r\n\"referenceKey\": \"{{referenceKey}}\",\r\n\"referenceTable\": \"{{referenceTable}}\",\r\n  \"fieldLabel\": \"{{label}}\",\r\n  \"parentTable\": \"{{tableName}}\",\r\n  \"parentSysId\": \"{{recordSysId}}\",\r\n  \"encodedRecord\": \"{{encodedRecord}}\",\r\n  \"serializedChanges\": \"{{serializedChanges}}\"\r\n}",
+					"actionAttributes": "",
+					"groupBy": false,
+					"group": "",
+					"assignmentId": "f5f1de327764701022f7f4d268106186",
+					"confirmationRequired": false,
+					"confirmationMessage": "",
+					"tooltip": "Search for Record",
+					"clientScript": "function onClick() { }",
+					"modelConditions": [
+						{
+							"field": "readonly",
+							"operator": "=",
+							"value": "false",
+							"newQuery": false,
+							"or": false
+						},
+						{
+							"field": null,
+							"operator": "=",
+							"value": null,
+							"newQuery": false,
+							"or": false
+						}
+					],
+					"payloadMap": [
+						{
+							"name": "parentSysId",
+							"value": "{{recordSysId}}"
+						},
+						{
+							"name": "encodedRecord",
+							"value": "{{encodedRecord}}"
+						},
+						{
+							"name": "referenceField",
+							"value": "{{fieldName}}"
+						},
+						{
+							"name": "fieldLabel",
+							"value": "{{label}}"
+						},
+						{
+							"name": "serializedChanges",
+							"value": "{{serializedChanges}}"
+						},
+						{
+							"name": "parentTable",
+							"value": "{{tableName}}"
+						},
+						{
+							"name": "referenceKey",
+							"value": "{{referenceKey}}"
+						},
+						{
+							"name": "referenceTable",
+							"value": "{{referenceTable}}"
+						}
+					]
+				}
+			],
+			"inventory_manager": [
+				{
+					"name": "open_record",
+					"icon": "circle-info-outline",
+					"label": "Open Record",
+					"dependency": "",
+					"requiresValue": true,
+					"order": 0,
+					"conditions": "",
+					"actionType": "uxf_client_action",
+					"actionComponent": "",
+					"actionDispatch": "REFERENCE_INFO_CLICK",
+					"actionPayload": "{\r\n\t\"referenceInfoClick\": {\r\n\t\t\"name\": \"{{name}}\",\r\n\t\t\"sys_id\": \"{{referenceSysId}}\",\r\n\t\t\"referencetable\": \"{{referenceTable}}\",\r\n\t\t\"table\": \"{{tableName}}\",\r\n\t\t\"field\": \"{{fieldName}}\"\r\n\t}\r\n}",
+					"actionAttributes": "",
+					"groupBy": false,
+					"group": "",
+					"assignmentId": "172e2043534310108135ddeeff7b12dd",
+					"confirmationRequired": false,
+					"confirmationMessage": "",
+					"tooltip": "Open Record",
+					"clientScript": "function onClick() { }",
+					"modelConditions": [
+						{
+							"field": "value",
+							"operator": "ISNOTEMPTY",
+							"value": "",
+							"newQuery": false,
+							"or": false
+						},
+						{
+							"field": null,
+							"operator": "=",
+							"value": null,
+							"newQuery": false,
+							"or": false
+						}
+					],
+					"payloadMap": [
+						{
+							"name": "referenceInfoClick@referencetable",
+							"value": "{{referenceTable}}"
+						},
+						{
+							"name": "referenceInfoClick@sys_id",
+							"value": "{{referenceSysId}}"
+						},
+						{
+							"name": "referenceInfoClick@field",
+							"value": "{{fieldName}}"
+						},
+						{
+							"name": "referenceInfoClick@table",
+							"value": "{{tableName}}"
+						},
+						{
+							"name": "referenceInfoClick@name",
+							"value": "{{name}}"
+						}
+					]
+				},
+				{
+					"name": "ref_search",
+					"icon": "magnifying-glass-outline",
+					"label": "Search For Record",
+					"dependency": "",
+					"requiresValue": false,
+					"order": 0,
+					"conditions": "",
+					"actionType": "uxf_client_action",
+					"actionComponent": "",
+					"actionDispatch": "REF_SEARCH_REQUESTED",
+					"actionPayload": "{\r\n  \"referenceField\": \"{{fieldName}}\",\r\n\"referenceKey\": \"{{referenceKey}}\",\r\n\"referenceTable\": \"{{referenceTable}}\",\r\n  \"fieldLabel\": \"{{label}}\",\r\n  \"parentTable\": \"{{tableName}}\",\r\n  \"parentSysId\": \"{{recordSysId}}\",\r\n  \"encodedRecord\": \"{{encodedRecord}}\",\r\n  \"serializedChanges\": \"{{serializedChanges}}\"\r\n}",
+					"actionAttributes": "",
+					"groupBy": false,
+					"group": "",
+					"assignmentId": "c6542741ff13101035be517f793bf1bb",
+					"confirmationRequired": false,
+					"confirmationMessage": "",
+					"tooltip": "Search for Record",
+					"clientScript": "function onClick() { }",
+					"modelConditions": [
+						{
+							"field": "readonly",
+							"operator": "=",
+							"value": "false",
+							"newQuery": false,
+							"or": false
+						},
+						{
+							"field": null,
+							"operator": "=",
+							"value": null,
+							"newQuery": false,
+							"or": false
+						}
+					],
+					"payloadMap": [
+						{
+							"name": "parentSysId",
+							"value": "{{recordSysId}}"
+						},
+						{
+							"name": "encodedRecord",
+							"value": "{{encodedRecord}}"
+						},
+						{
+							"name": "referenceField",
+							"value": "{{fieldName}}"
+						},
+						{
+							"name": "fieldLabel",
+							"value": "{{label}}"
+						},
+						{
+							"name": "serializedChanges",
+							"value": "{{serializedChanges}}"
+						},
+						{
+							"name": "parentTable",
+							"value": "{{tableName}}"
+						},
+						{
+							"name": "referenceKey",
+							"value": "{{referenceKey}}"
+						},
+						{
+							"name": "referenceTable",
+							"value": "{{referenceTable}}"
+						}
+					]
+				}
+			]
+		},
+		"relatedItems": [],
+		"sidebarActions": [],
+		"configurationItems": [],
+		"isValidRecord": true,
+		"isNewRecord": true,
+		"canReadRecord": true,
+		"isTemplateComponentEnabled": "SBSvOy+GbxSDJtj0vJAayzV/qWcyOE8q4EMFFoLtc3K6hnAvHKGA12pK+8qme9mnegli1J4VD/bFpRTnrLvQFIni0oHXqiRrauImStqpV6k1EIobRv6R6p+ywYxmOHCjOXNYeTbc900POkiDxLBvuXvxWuRbla1d5c6JTm2o5qO5yZRyBPP+w/oRd5SxCt6wP17yJktK9Lw=",
+		"sysId": "efde5c4f8701d910b2af64e73cbb3552",
+		"encodedRecord": "SBSvOy+GbxSDJtj0vJAayzV/qWcyOE8q4EMFFoLtc3K6hnAvHKGA12pK+8qme9mnegli1J4VD/bFpRTnrLvQFIni0oHXqiRrauImStqpV6k1EIobRv6R6p+ywYxmOHCjOXNYeTbc900POkiDxLBvuXvxWuRbla1d5c6JTm2o5qO5yZRyBPP+w/oRd5SxCt6wP17yJktK9Lw=",
+		"recordValues": [
+			{
+				"name": "address",
+				"value": "",
+				"displayValue": null,
+				"valuesList": []
+			},
+			{
+				"name": "name",
+				"value": "",
+				"displayValue": null,
+				"valuesList": []
+			},
+			{
+				"name": "active",
+				"value": "true",
+				"displayValue": "true",
+				"valuesList": []
+			},
+			{
+				"name": "description",
+				"value": "",
+				"displayValue": null,
+				"valuesList": []
+			},
+			{
+				"name": "department",
+				"value": "",
+				"displayValue": null,
+				"valuesList": []
+			},
+			{
+				"name": "inventory_manager",
+				"value": "",
+				"displayValue": null,
+				"valuesList": []
+			},
+			{
+				"name": "u_choice_1",
+				"value": "",
+				"displayValue": null,
+				"valuesList": []
+			}
+		],
+		"fieldElements": [
+			{
+				"name": "name",
+				"dictionary": {
+					"type": "string",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "name",
+					"label": "Name",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "string",
+					"isMandatory": true,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": [
+						{
+							"name": "edge_encryption_enabled",
+							"value": "true"
+						}
+					]
+				},
+				"maxLength": 40,
+				"defaultRows": null
+			},
+			{
+				"name": "active",
+				"dictionary": {
+					"type": "boolean",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "active",
+					"label": "Active",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "boolean",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": []
+				},
+				"maxLength": 40,
+				"defaultRows": null
+			},
+			{
+				"name": "description",
+				"dictionary": {
+					"type": "string",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "description",
+					"label": "Description",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "string",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": [
+						{
+							"name": "edge_encryption_enabled",
+							"value": "true"
+						}
+					]
+				},
+				"maxLength": 80,
+				"defaultRows": null
+			},
+			{
+				"name": "address",
+				"dictionary": {
+					"type": "multi_two_lines",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "address",
+					"label": "Address",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "multi_two_lines",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": []
+				},
+				"maxLength": 255,
+				"defaultRows": null
+			},
+			{
+				"name": "inventory_manager",
+				"dictionary": {
+					"type": "reference",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "inventory_manager",
+					"label": "Inventory manager",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "reference",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": [
+						{
+							"name": "encode_utf8",
+							"value": "false"
+						}
+					]
+				},
+				"reference": "sys_user",
+				"referenceQualifier": null,
+				"referenceKey": null,
+				"useReferenceQualifier": "simple",
+				"dependent": null,
+				"dependentOnField": null,
+				"refAutoCompleter": "AJAXTableCompleter",
+				"refAcOrderBy": "name",
+				"refAcColumns": "email",
+				"refAcColumnsSearch": true,
+				"refAcDisplayValue": false,
+				"refQualElements": null,
+				"refContributions": null,
+				"isDynamicCreate": false,
+				"isReferenceScriptableTable": false,
+				"referenceError": null,
+				"referenceSysId": null
+			},
+			{
+				"name": "department",
+				"dictionary": {
+					"type": "glide_list",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "department",
+					"label": "Departments",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "glide_list",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": [
+						{
+							"name": "no_sort",
+							"value": "true"
+						},
+						{
+							"name": "slushbucket_ref_no_expand",
+							"value": "true"
+						}
+					]
+				},
+				"reference": "cmn_department"
+			},
+			{
+				"name": "u_choice_1",
+				"dictionary": {
+					"type": "choice",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "u_choice_1",
+					"label": "Choice for Scott",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "string",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": [
+						{
+							"name": "edge_encryption_enabled",
+							"value": "true"
+						}
+					]
+				},
+				"choices": [
+					{
+						"displayValue": "-- None --",
+						"value": ""
+					},
+					{
+						"displayValue": "Choice 1",
+						"value": "Choice 1"
+					},
+					{
+						"displayValue": "Choice 2",
+						"value": "Choice 2"
+					},
+					{
+						"displayValue": "Choice 3",
+						"value": "Choice 3"
+					}
+				]
+			}
+		],
+		"baseTable": "x_snc_trackit_stock_location",
+		"table": "x_snc_trackit_stock_location",
+		"isScriptableTable": false,
+		"lastErrorMessage": "",
+		"domainSeparation": null,
+		"formatters": {},
+		"showVariableEditor": false,
+		"sections": [
+			{
+				"sysId": "42dc7f5d4642c11070f1a4feb236431e",
+				"caption": "max_stocklocations",
+				"captionDisplay": "Max Stock Locations",
+				"rows": [
+					[
+						{
+							"fields": [
+								"name"
+							]
+						},
+						{
+							"fields": [
+								"active"
+							]
+						}
+					],
+					[
+						{
+							"fields": [
+								"description",
+								"address",
+								"inventory_manager",
+								"department",
+								"u_choice_1"
+							]
+						}
+					]
+				],
+				"id": 0,
+				"label": "Max Stock Locations",
+				"defaultSection": false,
+				"expanded": true
+			}
+		],
+		"relatedLists": [],
+		"fieldStates": {},
+		"formFieldValues": {
+			"name": {
+				"name": "name",
+				"maxLength": 40,
+				"defaultRows": null,
+				"type": "string",
+				"label": "Name",
+				"visible": true,
+				"readonly": false,
+				"mandatory": true,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "string",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": null,
+				"valuesList": [],
+				"display_value_list": [],
+				"isEncrypted": false,
+				"encryptionContext": "",
+				"sys_readonly": false,
+				"originalValue": ""
+			},
+			"active": {
+				"name": "active",
+				"maxLength": 40,
+				"defaultRows": null,
+				"type": "boolean",
+				"label": "Active",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "boolean",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "true",
+				"displayValue": "true",
+				"valuesList": [],
+				"display_value_list": [],
+				"sys_readonly": false,
+				"originalValue": "true"
+			},
+			"description": {
+				"name": "description",
+				"maxLength": 80,
+				"defaultRows": null,
+				"type": "string",
+				"label": "Description",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "string",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": null,
+				"valuesList": [],
+				"display_value_list": [],
+				"isEncrypted": false,
+				"encryptionContext": "",
+				"sys_readonly": false,
+				"originalValue": ""
+			},
+			"address": {
+				"name": "address",
+				"maxLength": 255,
+				"defaultRows": null,
+				"type": "multi_two_lines",
+				"label": "Address",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "multi_two_lines",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": null,
+				"valuesList": [],
+				"display_value_list": [],
+				"sys_readonly": false,
+				"originalValue": ""
+			},
+			"inventory_manager": {
+				"name": "inventory_manager",
+				"reference": "sys_user",
+				"referenceQualifier": null,
+				"referenceKey": null,
+				"useReferenceQualifier": "simple",
+				"dependent": null,
+				"dependentOnField": null,
+				"refAutoCompleter": "AJAXTableCompleter",
+				"refAcOrderBy": "name",
+				"refAcColumns": "email",
+				"refAcColumnsSearch": true,
+				"refAcDisplayValue": false,
+				"refQualElements": null,
+				"refContributions": null,
+				"isDynamicCreate": false,
+				"isReferenceScriptableTable": false,
+				"referenceError": null,
+				"referenceSysId": "",
+				"type": "reference",
+				"label": "Inventory manager",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "reference",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": null,
+				"valuesList": [],
+				"display_value_list": [],
+				"messages": [],
+				"sys_readonly": false,
+				"originalValue": ""
+			},
+			"department": {
+				"name": "department",
+				"reference": "cmn_department",
+				"type": "glide_list",
+				"label": "Departments",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "glide_list",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": null,
+				"valuesList": [],
+				"display_value_list": [],
+				"messages": [],
+				"sys_readonly": false,
+				"originalValue": ""
+			},
+			"u_choice_1": {
+				"name": "u_choice_1",
+				"type": "choice",
+				"label": "Choice for Scott",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "string",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": "",
+				"valuesList": [],
+				"display_value_list": [],
+				"sys_readonly": false,
+				"originalValue": ""
+			}
+		},
+		"formFields": [
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null
+		],
+		"formTabs": {
+			"isDefaultTabOrder": true,
+			"defaultTabFocus": null,
+			"tabsOrder": []
+		},
+		"formSettings": {
+			"isDetailsHidden": false,
+			"isSectionMenuHidden": false,
+			"isSectionCollapseDisabled": false,
+			"isJournalFieldTypeHidden": false,
+			"defaultSection": null
+		},
+		"fields": {
+			"name": {
+				"name": "name",
+				"dictionary": {
+					"type": "string",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "name",
+					"label": "Name",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "string",
+					"isMandatory": true,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": [
+						{
+							"name": "edge_encryption_enabled",
+							"value": "true"
+						}
+					]
+				},
+				"maxLength": 40,
+				"defaultRows": null,
+				"type": "string",
+				"label": "Name",
+				"visible": true,
+				"readonly": false,
+				"mandatory": true,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "string",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": null,
+				"valuesList": [],
+				"display_value_list": [],
+				"isEncrypted": false,
+				"encryptionContext": "",
+				"sys_readonly": false,
+				"originalValue": ""
+			},
+			"active": {
+				"name": "active",
+				"dictionary": {
+					"type": "boolean",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "active",
+					"label": "Active",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "boolean",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": []
+				},
+				"maxLength": 40,
+				"defaultRows": null,
+				"type": "boolean",
+				"label": "Active",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "boolean",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "true",
+				"displayValue": "true",
+				"valuesList": [],
+				"display_value_list": [],
+				"sys_readonly": false,
+				"originalValue": "true"
+			},
+			"description": {
+				"name": "description",
+				"dictionary": {
+					"type": "string",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "description",
+					"label": "Description",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "string",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": [
+						{
+							"name": "edge_encryption_enabled",
+							"value": "true"
+						}
+					]
+				},
+				"maxLength": 80,
+				"defaultRows": null,
+				"type": "string",
+				"label": "Description",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "string",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": null,
+				"valuesList": [],
+				"display_value_list": [],
+				"isEncrypted": false,
+				"encryptionContext": "",
+				"sys_readonly": false,
+				"originalValue": ""
+			},
+			"address": {
+				"name": "address",
+				"dictionary": {
+					"type": "multi_two_lines",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "address",
+					"label": "Address",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "multi_two_lines",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": []
+				},
+				"maxLength": 255,
+				"defaultRows": null,
+				"type": "multi_two_lines",
+				"label": "Address",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "multi_two_lines",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": null,
+				"valuesList": [],
+				"display_value_list": [],
+				"sys_readonly": false,
+				"originalValue": ""
+			},
+			"inventory_manager": {
+				"name": "inventory_manager",
+				"dictionary": {
+					"type": "reference",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "inventory_manager",
+					"label": "Inventory manager",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "reference",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": [
+						{
+							"name": "encode_utf8",
+							"value": "false"
+						}
+					]
+				},
+				"reference": "sys_user",
+				"referenceQualifier": null,
+				"referenceKey": null,
+				"useReferenceQualifier": "simple",
+				"dependent": null,
+				"dependentOnField": null,
+				"refAutoCompleter": "AJAXTableCompleter",
+				"refAcOrderBy": "name",
+				"refAcColumns": "email",
+				"refAcColumnsSearch": true,
+				"refAcDisplayValue": false,
+				"refQualElements": null,
+				"refContributions": null,
+				"isDynamicCreate": false,
+				"isReferenceScriptableTable": false,
+				"referenceError": null,
+				"referenceSysId": "",
+				"type": "reference",
+				"label": "Inventory manager",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "reference",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": null,
+				"valuesList": [],
+				"display_value_list": [],
+				"messages": [],
+				"sys_readonly": false,
+				"declarativeUiActions": [
+					{
+						"name": "open_record",
+						"icon": "circle-info-outline",
+						"label": "Open Record",
+						"dependency": "",
+						"requiresValue": true,
+						"order": 0,
+						"conditions": "",
+						"actionType": "uxf_client_action",
+						"actionComponent": "",
+						"actionDispatch": "REFERENCE_INFO_CLICK",
+						"actionPayload": "{\r\n\t\"referenceInfoClick\": {\r\n\t\t\"name\": \"{{name}}\",\r\n\t\t\"sys_id\": \"{{referenceSysId}}\",\r\n\t\t\"referencetable\": \"{{referenceTable}}\",\r\n\t\t\"table\": \"{{tableName}}\",\r\n\t\t\"field\": \"{{fieldName}}\"\r\n\t}\r\n}",
+						"actionAttributes": "",
+						"groupBy": false,
+						"group": "",
+						"assignmentId": "172e2043534310108135ddeeff7b12dd",
+						"confirmationRequired": false,
+						"confirmationMessage": "",
+						"tooltip": "Open Record",
+						"clientScript": "function onClick() { }",
+						"modelConditions": [
+							{
+								"field": "value",
+								"operator": "ISNOTEMPTY",
+								"value": "",
+								"newQuery": false,
+								"or": false
+							},
+							{
+								"field": null,
+								"operator": "=",
+								"value": null,
+								"newQuery": false,
+								"or": false
+							}
+						],
+						"payloadMap": [
+							{
+								"name": "referenceInfoClick@referencetable",
+								"value": "{{referenceTable}}"
+							},
+							{
+								"name": "referenceInfoClick@sys_id",
+								"value": "{{referenceSysId}}"
+							},
+							{
+								"name": "referenceInfoClick@field",
+								"value": "{{fieldName}}"
+							},
+							{
+								"name": "referenceInfoClick@table",
+								"value": "{{tableName}}"
+							},
+							{
+								"name": "referenceInfoClick@name",
+								"value": "{{name}}"
+							}
+						]
+					},
+					{
+						"name": "ref_search",
+						"icon": "magnifying-glass-outline",
+						"label": "Search For Record",
+						"dependency": "",
+						"requiresValue": false,
+						"order": 0,
+						"conditions": "",
+						"actionType": "uxf_client_action",
+						"actionComponent": "",
+						"actionDispatch": "REF_SEARCH_REQUESTED",
+						"actionPayload": "{\r\n  \"referenceField\": \"{{fieldName}}\",\r\n\"referenceKey\": \"{{referenceKey}}\",\r\n\"referenceTable\": \"{{referenceTable}}\",\r\n  \"fieldLabel\": \"{{label}}\",\r\n  \"parentTable\": \"{{tableName}}\",\r\n  \"parentSysId\": \"{{recordSysId}}\",\r\n  \"encodedRecord\": \"{{encodedRecord}}\",\r\n  \"serializedChanges\": \"{{serializedChanges}}\"\r\n}",
+						"actionAttributes": "",
+						"groupBy": false,
+						"group": "",
+						"assignmentId": "c6542741ff13101035be517f793bf1bb",
+						"confirmationRequired": false,
+						"confirmationMessage": "",
+						"tooltip": "Search for Record",
+						"clientScript": "function onClick() { }",
+						"modelConditions": [
+							{
+								"field": "readonly",
+								"operator": "=",
+								"value": "false",
+								"newQuery": false,
+								"or": false
+							},
+							{
+								"field": null,
+								"operator": "=",
+								"value": null,
+								"newQuery": false,
+								"or": false
+							}
+						],
+						"payloadMap": [
+							{
+								"name": "parentSysId",
+								"value": "{{recordSysId}}"
+							},
+							{
+								"name": "encodedRecord",
+								"value": "{{encodedRecord}}"
+							},
+							{
+								"name": "referenceField",
+								"value": "{{fieldName}}"
+							},
+							{
+								"name": "fieldLabel",
+								"value": "{{label}}"
+							},
+							{
+								"name": "serializedChanges",
+								"value": "{{serializedChanges}}"
+							},
+							{
+								"name": "parentTable",
+								"value": "{{tableName}}"
+							},
+							{
+								"name": "referenceKey",
+								"value": "{{referenceKey}}"
+							},
+							{
+								"name": "referenceTable",
+								"value": "{{referenceTable}}"
+							}
+						]
+					}
+				],
+				"originalValue": ""
+			},
+			"department": {
+				"name": "department",
+				"dictionary": {
+					"type": "glide_list",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "department",
+					"label": "Departments",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "glide_list",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": [
+						{
+							"name": "no_sort",
+							"value": "true"
+						},
+						{
+							"name": "slushbucket_ref_no_expand",
+							"value": "true"
+						}
+					]
+				},
+				"reference": "cmn_department",
+				"type": "glide_list",
+				"label": "Departments",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "glide_list",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": null,
+				"valuesList": [],
+				"display_value_list": [],
+				"messages": [],
+				"sys_readonly": false,
+				"declarativeUiActions": [
+					{
+						"name": "list_ref_search",
+						"icon": "magnifying-glass-outline",
+						"label": "Search for Record",
+						"dependency": "",
+						"requiresValue": false,
+						"order": 0,
+						"conditions": "",
+						"actionType": "uxf_client_action",
+						"actionComponent": "",
+						"actionDispatch": "REF_SEARCH_REQUESTED",
+						"actionPayload": "{\r\n  \"referenceField\": \"{{fieldName}}\",\r\n\"referenceKey\": \"{{referenceKey}}\",\r\n\"referenceTable\": \"{{referenceTable}}\",\r\n  \"fieldLabel\": \"{{label}}\",\r\n  \"parentTable\": \"{{tableName}}\",\r\n  \"parentSysId\": \"{{recordSysId}}\",\r\n  \"encodedRecord\": \"{{encodedRecord}}\",\r\n  \"serializedChanges\": \"{{serializedChanges}}\"\r\n}",
+						"actionAttributes": "",
+						"groupBy": false,
+						"group": "",
+						"assignmentId": "f5f1de327764701022f7f4d268106186",
+						"confirmationRequired": false,
+						"confirmationMessage": "",
+						"tooltip": "Search for Record",
+						"clientScript": "function onClick() { }",
+						"modelConditions": [
+							{
+								"field": "readonly",
+								"operator": "=",
+								"value": "false",
+								"newQuery": false,
+								"or": false
+							},
+							{
+								"field": null,
+								"operator": "=",
+								"value": null,
+								"newQuery": false,
+								"or": false
+							}
+						],
+						"payloadMap": [
+							{
+								"name": "parentSysId",
+								"value": "{{recordSysId}}"
+							},
+							{
+								"name": "encodedRecord",
+								"value": "{{encodedRecord}}"
+							},
+							{
+								"name": "referenceField",
+								"value": "{{fieldName}}"
+							},
+							{
+								"name": "fieldLabel",
+								"value": "{{label}}"
+							},
+							{
+								"name": "serializedChanges",
+								"value": "{{serializedChanges}}"
+							},
+							{
+								"name": "parentTable",
+								"value": "{{tableName}}"
+							},
+							{
+								"name": "referenceKey",
+								"value": "{{referenceKey}}"
+							},
+							{
+								"name": "referenceTable",
+								"value": "{{referenceTable}}"
+							}
+						]
+					}
+				],
+				"originalValue": ""
+			},
+			"u_choice_1": {
+				"name": "u_choice_1",
+				"dictionary": {
+					"type": "choice",
+					"dependentFieldLabel": null,
+					"dependentField": null,
+					"dependentTable": null,
+					"name": "u_choice_1",
+					"label": "Choice for Scott",
+					"fieldHint": "",
+					"canWrite": true,
+					"canRead": true,
+					"canCreate": true,
+					"internalType": "string",
+					"isMandatory": false,
+					"isEncrypted": false,
+					"encryptionContext": "",
+					"sys_readonly": false,
+					"attributes": [
+						{
+							"name": "edge_encryption_enabled",
+							"value": "true"
+						}
+					]
+				},
+				"choices": [
+					{
+						"displayValue": "-- None --",
+						"value": ""
+					},
+					{
+						"displayValue": "Choice 1",
+						"value": "Choice 1"
+					},
+					{
+						"displayValue": "Choice 2",
+						"value": "Choice 2"
+					},
+					{
+						"displayValue": "Choice 3",
+						"value": "Choice 3"
+					}
+				],
+				"type": "choice",
+				"label": "Choice for Scott",
+				"visible": true,
+				"readonly": false,
+				"mandatory": false,
+				"dependentField": null,
+				"dependentTable": null,
+				"referringTable": "x_snc_trackit_stock_location",
+				"referringRecordId": "efde5c4f8701d910b2af64e73cbb3552",
+				"internalType": "string",
+				"referenceSysId": "",
+				"isGlideVar": false,
+				"value": "",
+				"displayValue": "",
+				"valuesList": [],
+				"display_value_list": [],
+				"sys_readonly": false,
+				"originalValue": ""
+			}
+		},
+		"user": {
+			"preferences": [
+				{
+					"name": "workspace.layout.type.x_snc_trackit_stock_location",
+					"value": null
+				},
+				{
+					"name": "workspace.layout.form_ratio.x_snc_trackit_stock_location",
+					"value": null
+				},
+				{
+					"name": "workspace.layout.sidebar_ratio.x_snc_trackit_stock_location",
+					"value": null
+				}
+			],
+			"roles": [
+				"sn_hr_core.basic",
+				"ais_admin",
+				"catalog_builder_editor",
+				"catalog_template_editor",
+				"catalog",
+				"schedule_admin",
+				"template_editor_global",
+				"sn_hr_core.report_creator",
+				"sn_shn.admin",
+				"ml_admin",
+				"report_group",
+				"sn_ca.campaign_approver",
+				"sn_cd.content_admin",
+				"sn_hr_core.content_reader",
+				"sn_hr_core.case_writer",
+				"sn_ca.campaign_admin",
+				"sn_hr_core.usa_employee_only",
+				"search_application_admin",
+				"sn_shn.user",
+				"flow_operator",
+				"workspace_user",
+				"sn_hr_core.case_reader",
+				"catalog_admin",
+				"knowledge",
+				"sn_shn.editor",
+				"sn_hr_core.content_writer",
+				"document_management_user",
+				"sn_hr_integrations.admin",
+				"skill_admin",
+				"skill_manager",
+				"pa_viewer",
+				"skill_user",
+				"survey_reader",
+				"personalize_dictionary",
+				"live_feed_admin",
+				"evam_admin",
+				"sn_esign.admin",
+				"canvas_user",
+				"pa_data_collector",
+				"teamdev_code_reviewer",
+				"sn_hr_core.admin",
+				"agent_security_admin",
+				"sn_hr_mobile.admin",
+				"approval_admin",
+				"report_user",
+				"sn_bm_client.benchmark_data_viewer",
+				"sn_employee.admin",
+				"assessment_admin",
+				"sn_hr_integrations.user",
+				"taxonomy_admin",
+				"link_generator_reader",
+				"sn_hr_sp.hrsp_employee",
+				"catalog_lookup_admin",
+				"admin",
+				"link_generator_writer",
+				"chat_admin",
+				"sn_cd.content_manager",
+				"sn_esign.config_manager",
+				"cmn_schedule_user",
+				"approver_user",
+				"sn_ca.campaign_manager",
+				"sn_templated_snip.template_snippet_admin",
+				"assignment_rule_admin",
+				"knowledge_admin",
+				"sn_hr_sp.esc_admin",
+				"sn_hr_sp.admin",
+				"sn_hr_core.profile_reader",
+				"sn_templated_snip.template_snippet_writer",
+				"email_composer",
+				"sp_admin",
+				"sn_hr_core.kb_writer",
+				"sn_hr_core.hrsm_employee",
+				"announcement_admin",
+				"sn_templated_snip.template_snippet_reader",
+				"sn_cd.content_approver",
+				"sn_hr_core.manager",
+				"sn_publications_recipients_list_user",
+				"template_read_global",
+				"interaction_agent",
+				"user_criteria_admin",
+				"sn_hr_core.secure_info_reader",
+				"sn_hr_integrations.integration_external",
+				"survey_admin",
+				"sn_hr_core.secure_info_writer",
+				"sn_hr_core.profile_writer",
+				"x_snc_max_invent_0.admin"
+			],
+			"allRoles": [
+				"sn_hr_core.basic",
+				"ais_admin",
+				"catalog_builder_editor",
+				"catalog_template_editor",
+				"catalog",
+				"schedule_admin",
+				"template_editor_global",
+				"sn_hr_core.report_creator",
+				"sn_shn.admin",
+				"ml_admin",
+				"report_group",
+				"sn_ca.campaign_approver",
+				"sn_cd.content_admin",
+				"sn_hr_core.content_reader",
+				"sn_hr_core.case_writer",
+				"sn_ca.campaign_admin",
+				"sn_hr_core.usa_employee_only",
+				"search_application_admin",
+				"sn_shn.user",
+				"flow_operator",
+				"workspace_user",
+				"sn_hr_core.case_reader",
+				"catalog_admin",
+				"knowledge",
+				"sn_shn.editor",
+				"sn_hr_core.content_writer",
+				"document_management_user",
+				"sn_hr_integrations.admin",
+				"skill_admin",
+				"skill_manager",
+				"pa_viewer",
+				"skill_user",
+				"survey_reader",
+				"personalize_dictionary",
+				"live_feed_admin",
+				"evam_admin",
+				"sn_esign.admin",
+				"canvas_user",
+				"pa_data_collector",
+				"teamdev_code_reviewer",
+				"sn_hr_core.admin",
+				"agent_security_admin",
+				"sn_hr_mobile.admin",
+				"approval_admin",
+				"report_user",
+				"sn_bm_client.benchmark_data_viewer",
+				"sn_employee.admin",
+				"assessment_admin",
+				"sn_hr_integrations.user",
+				"taxonomy_admin",
+				"link_generator_reader",
+				"sn_hr_sp.hrsp_employee",
+				"catalog_lookup_admin",
+				"admin",
+				"link_generator_writer",
+				"chat_admin",
+				"sn_cd.content_manager",
+				"sn_esign.config_manager",
+				"cmn_schedule_user",
+				"approver_user",
+				"sn_ca.campaign_manager",
+				"sn_templated_snip.template_snippet_admin",
+				"assignment_rule_admin",
+				"knowledge_admin",
+				"sn_hr_sp.esc_admin",
+				"sn_hr_sp.admin",
+				"sn_hr_core.profile_reader",
+				"sn_templated_snip.template_snippet_writer",
+				"email_composer",
+				"sp_admin",
+				"sn_hr_core.kb_writer",
+				"sn_hr_core.hrsm_employee",
+				"announcement_admin",
+				"sn_templated_snip.template_snippet_reader",
+				"sn_cd.content_approver",
+				"sn_hr_core.manager",
+				"sn_publications_recipients_list_user",
+				"template_read_global",
+				"interaction_agent",
+				"user_criteria_admin",
+				"sn_hr_core.secure_info_reader",
+				"sn_hr_integrations.integration_external",
+				"survey_admin",
+				"sn_hr_core.secure_info_writer",
+				"sn_hr_core.profile_writer",
+				"x_snc_max_invent_0.admin"
+			],
+			"sys_id": "6816f79cc0a8016401c5a33be04be441",
+			"userName": "admin",
+			"firstName": "System",
+			"lastName": "Administrator",
+			"title": "System Administrator",
+			"avatar": "a5d3c898c3222010ae17dd981840dd8b.iix?t=small",
+			"departmentId": "a581ab703710200044e0bfc8bcbe5de8",
+			"email": "admin@example.com",
+			"userId": "6816f79cc0a8016401c5a33be04be441"
+		},
+		"formLayoutConfig": {
+			"formLayoutType": 1,
+			"formSizeRatio": 63,
+			"sideBarSizeRatio": 27
+		},
+		"fieldValidators": [],
+		"scripts": [
+			{
+				"name": "sn_hr_core.utils_ui_ws",
+				"description": "",
+				"script": "(function() {\n    \"use strict\";\n    function _ajaxRecordSet(tableName, query, sysparmName, process) {\n        try {\n            function getResponse(response) {\n                var answer = response.responseXML.documentElement.getAttribute(\"answer\");\n                return process(JSON.parse(answer));\n            }\n            var ga = new GlideAjax('hr_CaseAjax').setScope(\"sn_hr_core\");\n            ga.addParam('sysparm_name', sysparmName);\n            ga.addParam('sysparm_tableName', tableName);\n            ga.addParam('sysparm_query', query);\n            ga.getXML(getResponse);\n        } catch (e) {\n            console.warn('error in ajaxRecordSet: ', e);\n        }\n    }\n    return {\n        getGlideRecord: function(tableName, query, process) {\n            _ajaxRecordSet(tableName, query, 'getGlideRecordSecureDataWS', process);\n        },\n        getGlideRecordSet: function(tableName, query, process) {\n            _ajaxRecordSet(tableName, query, 'getGlideRecordSecureSetDataWS', process);\n        },\n        type: 'utils_ui_ws'\n    };\n})\n",
+				"sysId": "08375f9c6b23201024ca2421ee44af8f"
+			},
+			{
+				"name": "RiskAssessmentResults",
+				"description": "",
+				"script": "function getUrl(mode) {\n\tvar changeSysId = g_form.getUniqueValue();\n\tvar urlSuffix = \"?sysparm_nostack=true&sysparm_chg_id=\" + changeSysId + \"&sysparm_ck=\" + g_form.getValue('sysparm_ck') + \"&sysparm_mode=\" + mode;\n\tif (mode === \"modal\")\nreturn \"/change_risk_details_app.do\" + urlSuffix;\nreturn \"/change_risk_details_page.do\" + urlSuffix;\n}\nfunction toggleRiskDetails(evt) {\n\tevt = evt || window.event;\n\tvar popup = nowapi.g_popup_manager;\n\tpopup.showPopup(evt, getUrl(\"popover\"), {\"width\": \"100%\"});\n}\nfunction openRiskDetails() {\n\tvar title = new GwtMessage().getMessage(\"Risk Details\");\n\tvar dialogClass = GlideModal;\n\tvar template = '<div id=\"#{HTML:id}\" tabindex=\"-1\" style=\"visibility: hidden;\"' +\n\t\t'aria-hidden=\"true\" class=\"modal\" role=\"dialog\" ' +\n\t\t'aria-label=\"' + title + '\" data-readonly=\"#{HTML:readOnly}\" data-has-help=\"#{HTML:showHelp}\" focus-escape=\"#{HTML:focusEscape}\" data-auto-focus=\"#{HTML:autoFocus}\">' +\n\t\t'\t<div class=\"modal-dialog #{size}\">' +\n\t\t'\t\t<div class=\"modal-content\">' +\n'\t\t\t<div class=\"modal-body container-fluid\" style=\"overflow: hidden; height: 260px;\"></div>' +\n'\t\t</div>' +\n'\t</div>' +\n'\t<i class=\"focus-trap-boundary-south\" tabindex=\"0\"></i>' +\n'</div>';\n\tvar riskDetailsDialog = new dialogClass(\"chg_risk_details\", false, 400, 400);\n\triskDetailsDialog.template = template;\n\triskDetailsDialog.setPreference('focusTrap', true);\n\triskDetailsDialog.setTitle(title);\n\triskDetailsDialog.renderIframe(getUrl(\"modal\"), function() {\n\t\twindow.g_scratchpad.next_available_time = {};\n\t\t$j(\"#chg_risk_details\").css({\n\t\t\tvisibility: \"visible\"\n\t\t});\n\t\t$j(\"#chg_risk_details iframe\").css({\n\t\t\toverflow: \"hidden\"\n\t\t});\n\t});\n}\n",
+				"sysId": "6ef584c5c300101035ae3f52c1d3ae5e"
+			},
+			{
+				"name": "sp.validation.executor",
+				"description": "Mobile / Service Portal field validation script executor",
+				"script": "(function() {\n\tvar _execute = function(key, validator, g_validation_script_field_count, g_form, NOW) {\n\t\t\n\t\tNOW.validationScriptState = NOW.validationScriptState || {};\n\t\tvar scriptState = NOW.validationScriptState[g_form.getSysId()] = NOW.validationScriptState[g_form.getSysId()] || {\n\t\t\tvalidated: {},\n\t\t\ttotalValidations: g_validation_script_field_count,\n\t\t\tpendingValidations: g_validation_script_field_count,\n\t\t\tfieldsProcessed: 0\n\t\t};\n\t\tvar actionName = g_form.getActionName();\n\t\tif (actionName !== 'none') scriptState.actionName = actionName;\n\t\t\n\t\tvar fieldState = scriptState.validated[key];\n\t\tif (fieldState !== undefined) {\n\t\t\t\n\t\t\tif (fieldState.pending || scriptState.pendingValidations !== 0) {\n\t\t\t\treturn false;\n\t\t\t}\n\t\t\t\n\t\t\tvar returnValue = fieldState.valid ? true : fieldState.errorMsg;\n\t\t\tdelete scriptState.validated[key];\n\t\t\t\n\t\t\tscriptState.fieldsProcessed++;\n\t\t\t\n\t\t\tif (scriptState.fieldsProcessed === scriptState.totalValidations) {\n\t\t\t\tscriptState.fieldsProcessed = 0;\n\t\t\t\tscriptState.pendingValidations = scriptState.totalValidations;\nNOW.validationScriptState[g_form.getSysId()] = null;\n\t\t\t}\n\t\t\t\n\t\t\treturn returnValue;\n\t\t}\n\t\t\n\t\tif (actionName === 'none') { return false; }\n\t\t\n\t\tscriptState.validated[key] = { pending: true };\n\t\t\n\t\tvalidator(function(key, valid, errorMsg) {\n\t\t\tscriptState.validated[key] = {\n\t\t\t\tvalid: valid,\n\t\t\t\terrorMsg: errorMsg,\n\t\t\t\tpending: false\n\t\t\t};\n\t\t\t\n\t\t\tscriptState.pendingValidations--;\n\t\t\t\n\t\t\tif (scriptState.pendingValidations === 0) {\n\t\t\t\tg_form.submit(scriptState.actionName);\n\t\t\t}\n\t\t});\n\t\t\n\t\treturn false;\t\n\t};\n\t\n\treturn {\n\t\texecute: _execute\n\t};\n});\n",
+				"sysId": "df652d52e7b21300b2888f49c2f6a9f6"
+			},
+			{
+				"name": "utils.validators.email",
+				"description": "Email address validation utilities",
+				"script": "(function() {\n\tvar isDigit = function(thchar) {\n\t\treturn (thchar >= '0' && thchar <= '9');\n\t};\n\tvar isAlpha = function(thchar) {\n\t\treturn (thchar >= 'a' && thchar <= 'z\\uffff')\n\t\t\t|| (thchar >= 'A' && thchar <= 'Z\\uffff') || thchar == '_';\n\t};\n\tvar isAlphaNum = function(thchar) {\n\t\treturn isAlpha(thchar) || isDigit(thchar);\n\t};\n\tvar containsOnlyChars = function(validChars, sText) {\nif (!sText) { return true; }\n\t\tfor (var i = 0; i < sText.length; i++) {\n\t\t\tvar c = sText.charAt(i);\nif (validChars.indexOf(c) === -1) { return false; }\n\t\t}\n\t\treturn true;\n\t};\n\tvar isEmailValidWithReason = function(value) {\nvar localPartChars = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%*/?|^{}`~&'+-=_.\";\n\t\tvar domainChars =    \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.\";\n\t\tif (value.indexOf(\"@\") === -1) { return \"missing @ sign\"; }\n\t\tvar s = value.split(\"@\");\n\t\tif (s.length != 2) { return \"too many at signs\"; }\n\t\tif (!containsOnlyChars(localPartChars, s[0])) { return \"invalid character before the at sign\"; }\n\t\tif (s[0].length < 1) { return \"at least one character must be before the at sign\"; }\n\t\tif (s[0].substr(0,1) === \".\") { return \"period cannot be the first character\"; }\n\t\tif (s[0].substr(s[0].length-1,1) === \".\") { return \"period cannot be the last character before the at sign\"; }\n\t\tif (!containsOnlyChars(domainChars, s[1])) { return \"invalid character after the at sign\"; }\n\t\tvar periodIndex = s[1].indexOf(\".\");\n\t\tif (periodIndex === -1) { return \"missing period after the at sign\"; }\n\t\tif (periodIndex === 0) { return \"period cannot be the first character after the at sign\"; }\n\t\tvar periods = s[1].split(\".\");\n\t\tvar lastPeriod = periods[periods.length-1];\n\t\tif (lastPeriod.length < 1) { return \"must be at least 1 character after the last period\"; }\n\t\tif (!isAlphaNum(s[1].substr(0,1))) { return \"the first character after the at sign must be alphanumeric\"; }\n\t\tif (!isAlphaNum(s[1].substr(s[1].length-1,1))) { return \"the last character must be alphanumeric\"; }\nreturn \"\";\n\t};\n\tvar isEmailValid = function(value) {\n\t\treturn isEmailValidWithReason(value) === \"\";\n\t};\n\treturn {\n\t\tisEmailValid: isEmailValid\n\t};\n});\n",
+				"sysId": "fc831d91e7321300b2888f49c2f6a9ff"
+			}
+		],
+		"modals": [
+			{
+				"component": "sn-article-template-selector",
+				"namespace": "sn_ui_knowledge",
+				"api": "createArticle"
+			},
+			{
+				"component": "sn-itsm-new-record-interceptor",
+				"namespace": "sn_itsm_workspace",
+				"api": "showInterceptor"
+			}
+		],
+		"formActions": [
+			{
+				"name": "sysverb_ws_save",
+				"label": "Save",
+				"color": "unstyled",
+				"shouldBeInOverflow": false,
+				"sysId": "6787ab060bb303008e64aabcb4673abf",
+				"clientScript": "function onClick(g_form) {\t\n}",
+				"hint": "Save record and remain here",
+				"hasClientScript": false,
+				"id": "6787ab060bb303008e64aabcb4673abf",
+				"uxActionType": "UIAction"
+			}
+		],
+		"actionNodes": [
+			{
+				"id": 1,
+				"label": "",
+				"overflow": false,
+				"color": "unstyled",
+				"type": "Button",
+				"children": [
+					{
+						"id": "6787ab060bb303008e64aabcb4673abf",
+						"label": "Save",
+						"hint": "Save record and remain here",
+						"uxActionType": "UIAction"
+					}
+				]
+			}
+		],
+		"daClientActionContract": {},
+		"defaultTab": null,
+		"config": {
+			"sysId": "efde5c4f8701d910b2af64e73cbb3552",
+			"showVariableEditor": false,
+			"showActivityStream": false,
+			"readonly": false,
+			"isMissingWorkspaceView": false,
+			"isSectionMenuHidden": true,
+			"isJournalFieldTypeHidden": false,
+			"canReadRecord": true,
+			"isValidRecord": true,
+			"isNewRecord": true,
+			"baseTable": "x_snc_trackit_stock_location",
+			"isScriptableTable": false,
+			"lastErrorMessage": "",
+			"disableCollapse": true
+		},
+		"gForm": {
+			"$private": {
+				"events": {},
+				"userState": {},
+				"fieldState": {}
+			}
+		},
+		"formModal": {
+			"_modalComponents": {
+				"SnAlertModal_MODAL_COMPONENT": {
+					"props": {
+						"context": "form",
+						"modalId": "glide_form_11659725619217_SnAlertModal",
+						"children": null
+					},
+					"context": {},
+					"updater": {},
+					"state": {
+						"show": false,
+						"modalTitle": "",
+						"message": ""
+					},
+					"_promiseResolve": null,
+					"_promiseReject": null,
+					"_reactInternalFiber": {
+						"tag": 2,
+						"key": "SnAlertModal",
+						"return": {
+							"tag": 5,
+							"key": null,
+							"type": "div",
+							"stateNode": {
+								"__reactEventHandlers$chtx9loesu8": {
+									"children": [
+										{
+											"key": "SnAlertModal",
+											"_owner": null
+										},
+										{
+											"key": "SnIFrameWrapperModal",
+											"props": {
+												"context": "form",
+												"modalId": "glide_form_11659725619217_SnIFrameWrapperModal",
+												"children": null
+											},
+											"_owner": null
+										},
+										{
+											"key": "FieldSetWrapperModal",
+											"props": {
+												"context": "form",
+												"modalId": "glide_form_11659725619217_FieldSetWrapperModal",
+												"children": null
+											},
+											"_owner": null
+										}
+									]
+								}
+							},
+							"return": {
+								"tag": 3,
+								"key": null,
+								"type": null,
+								"stateNode": {
+									"containerInfo": {},
+									"pendingChildren": null,
+									"remainingExpirationTime": 0,
+									"isReadyForCommit": false,
+									"finishedWork": null,
+									"pendingContext": null,
+									"hydrate": false,
+									"nextScheduledRoot": null
+								},
+								"return": null,
+								"sibling": null,
+								"index": 0,
+								"ref": null,
+								"pendingProps": null,
+								"memoizedProps": null,
+								"updateQueue": null,
+								"memoizedState": {
+									"element": {
+										"type": "div",
+										"key": null,
+										"ref": null,
+										"_owner": null
+									}
+								},
+								"internalContextTag": 0,
+								"effectTag": 0,
+								"nextEffect": null,
+								"firstEffect": {
+									"tag": 5,
+									"key": null,
+									"type": "sn-scripted-modal",
+									"stateNode": {
+										"__DO_NOT_USE_BOOTSTRAPPED__": true,
+										"__reactEventHandlers$chtx9loesu8": {
+											"component-id": "glide_form_11659725619217_SnAlertModal",
+											"context": "form",
+											"autofocus": true,
+											"children": {
+												"key": null,
+												"ref": null,
+												"props": {
+													"children": [
+														{
+															"key": "0",
+															"ref": null,
+															"props": {
+																"children": [
+																	{
+																		"type": "span",
+																		"key": null,
+																		"ref": null,
+																		"props": {
+																			"children": ""
+																		},
+																		"_owner": null
+																	},
+																	" ",
+																	null,
+																	" "
+																]
+															},
+															"_owner": null
+														}
+													]
+												},
+												"_owner": null
+											}
+										},
+										"__DO_NOT_USE_OR_YOU_WILL_BE_FIRED_BY_YOUR_PARENT__": "glide_form_1"
+									},
+									"return": {
+										"tag": 2,
+										"key": null,
+										"stateNode": {
+											"props": {
+												"modalId": "glide_form_11659725619217_SnAlertModal",
+												"modalTitle": "",
+												"show": false,
+												"context": "form",
+												"buttonAlignment": "full",
+												"size": "sm",
+												"autofocus": true,
+												"shouldFocusOnOpen": true
+											},
+											"state": null
+										},
+										"return": {
+											"tag": 2,
+											"key": null,
+											"stateNode": {
+												"props": {
+													"modalId": "glide_form_11659725619217_SnAlertModal",
+													"modalTitle": "",
+													"show": false,
+													"message": "",
+													"context": "form",
+													"buttonAlignment": "full",
+													"size": "sm",
+													"autofocus": true
+												},
+												"state": null
+											},
+											"sibling": null,
+											"index": 0,
+											"ref": null,
+											"pendingProps": null,
+											"updateQueue": null,
+											"memoizedState": null,
+											"internalContextTag": 0,
+											"effectTag": 1,
+											"nextEffect": null,
+											"expirationTime": 0,
+											"alternate": null
+										},
+										"sibling": null,
+										"index": 0,
+										"ref": null,
+										"pendingProps": null,
+										"updateQueue": null,
+										"memoizedState": null,
+										"internalContextTag": 0,
+										"effectTag": 1,
+										"nextEffect": null,
+										"expirationTime": 0,
+										"alternate": null
+									},
+									"child": {
+										"tag": 1,
+										"key": null,
+										"stateNode": null,
+										"child": {
+											"tag": 1,
+											"key": null,
+											"stateNode": null,
+											"child": {
+												"tag": 1,
+												"key": null,
+												"stateNode": null,
+												"child": {
+													"tag": 5,
+													"key": null,
+													"type": "div",
+													"stateNode": {
+														"__reactEventHandlers$chtx9loesu8": {
+															"slot": "content",
+															"style": {
+																"height": "100%"
+															},
+															"className": "slot-content",
+															"children": {
+																"type": "p",
+																"key": null,
+																"ref": null,
+																"props": {},
+																"_owner": null
+															}
+														}
+													},
+													"child": {
+														"tag": 5,
+														"key": null,
+														"type": "p",
+														"stateNode": {},
+														"child": {
+															"tag": 10,
+															"key": "0",
+															"type": null,
+															"stateNode": null,
+															"child": {
+																"tag": 5,
+																"key": null,
+																"type": "span",
+																"stateNode": {},
+																"child": null,
+																"sibling": {
+																	"tag": 6,
+																	"key": null,
+																	"type": null,
+																	"stateNode": {},
+																	"child": null,
+																	"sibling": {
+																		"tag": 6,
+																		"key": null,
+																		"type": null,
+																		"stateNode": {},
+																		"child": null,
+																		"sibling": null,
+																		"index": 3,
+																		"ref": null,
+																		"pendingProps": null,
+																		"memoizedProps": " ",
+																		"updateQueue": null,
+																		"memoizedState": null,
+																		"internalContextTag": 0,
+																		"effectTag": 0,
+																		"nextEffect": null,
+																		"firstEffect": null,
+																		"lastEffect": null,
+																		"expirationTime": 0,
+																		"alternate": null
+																	},
+																	"index": 1,
+																	"ref": null,
+																	"pendingProps": null,
+																	"memoizedProps": " ",
+																	"updateQueue": null,
+																	"memoizedState": null,
+																	"internalContextTag": 0,
+																	"effectTag": 0,
+																	"nextEffect": null,
+																	"firstEffect": null,
+																	"lastEffect": null,
+																	"expirationTime": 0,
+																	"alternate": null
+																},
+																"index": 0,
+																"ref": null,
+																"pendingProps": null,
+																"updateQueue": null,
+																"memoizedState": null,
+																"internalContextTag": 0,
+																"effectTag": 0,
+																"nextEffect": null,
+																"firstEffect": null,
+																"lastEffect": null,
+																"expirationTime": 0,
+																"alternate": null
+															},
+															"sibling": null,
+															"index": 0,
+															"ref": null,
+															"pendingProps": null,
+															"updateQueue": null,
+															"memoizedState": null,
+															"internalContextTag": 0,
+															"effectTag": 0,
+															"nextEffect": null,
+															"firstEffect": null,
+															"lastEffect": null,
+															"expirationTime": 0,
+															"alternate": null
+														},
+														"sibling": null,
+														"index": 0,
+														"ref": null,
+														"pendingProps": null,
+														"updateQueue": null,
+														"memoizedState": null,
+														"internalContextTag": 0,
+														"effectTag": 0,
+														"nextEffect": null,
+														"firstEffect": null,
+														"lastEffect": null,
+														"expirationTime": 0,
+														"alternate": null
+													},
+													"sibling": null,
+													"index": 0,
+													"ref": null,
+													"pendingProps": null,
+													"updateQueue": null,
+													"memoizedState": null,
+													"internalContextTag": 0,
+													"effectTag": 0,
+													"nextEffect": null,
+													"firstEffect": null,
+													"lastEffect": null,
+													"expirationTime": 0,
+													"alternate": null
+												},
+												"sibling": null,
+												"index": 0,
+												"ref": null,
+												"pendingProps": null,
+												"memoizedProps": {
+													"slot": "content"
+												},
+												"updateQueue": null,
+												"memoizedState": null,
+												"internalContextTag": 0,
+												"effectTag": 1,
+												"nextEffect": null,
+												"firstEffect": null,
+												"lastEffect": null,
+												"expirationTime": 0,
+												"alternate": null
+											},
+											"sibling": null,
+											"index": 0,
+											"ref": null,
+											"pendingProps": null,
+											"memoizedProps": {},
+											"updateQueue": null,
+											"memoizedState": null,
+											"internalContextTag": 0,
+											"effectTag": 1,
+											"nextEffect": null,
+											"firstEffect": null,
+											"lastEffect": null,
+											"expirationTime": 0,
+											"alternate": null
+										},
+										"sibling": null,
+										"index": 0,
+										"ref": null,
+										"pendingProps": null,
+										"updateQueue": null,
+										"memoizedState": null,
+										"internalContextTag": 0,
+										"effectTag": 1,
+										"nextEffect": null,
+										"firstEffect": null,
+										"lastEffect": null,
+										"expirationTime": 0,
+										"alternate": null
+									},
+									"sibling": null,
+									"index": 0,
+									"pendingProps": null,
+									"updateQueue": null,
+									"memoizedState": null,
+									"internalContextTag": 0,
+									"effectTag": 128,
+									"nextEffect": null,
+									"firstEffect": null,
+									"lastEffect": null,
+									"expirationTime": 0,
+									"alternate": null
+								},
+								"expirationTime": 0,
+								"alternate": {
+									"tag": 3,
+									"key": null,
+									"type": null,
+									"return": null,
+									"child": null,
+									"sibling": null,
+									"index": 0,
+									"ref": null,
+									"pendingProps": null,
+									"memoizedProps": null,
+									"updateQueue": {
+										"baseState": null,
+										"expirationTime": 1,
+										"first": {
+											"expirationTime": 1,
+											"partialState": {},
+											"callback": null,
+											"isReplace": false,
+											"isForced": false,
+											"nextCallback": null,
+											"next": null
+										},
+										"callbackList": null,
+										"hasForceUpdate": false,
+										"isInitialized": false
+									},
+									"memoizedState": null,
+									"internalContextTag": 0,
+									"effectTag": 0,
+									"nextEffect": null,
+									"firstEffect": null,
+									"lastEffect": null,
+									"expirationTime": 1
+								}
+							},
+							"sibling": null,
+							"index": 0,
+							"ref": null,
+							"pendingProps": null,
+							"updateQueue": null,
+							"memoizedState": null,
+							"internalContextTag": 0,
+							"effectTag": 0,
+							"nextEffect": null,
+							"lastEffect": {
+								"tag": 2,
+								"key": "FieldSetWrapperModal",
+								"stateNode": {
+									"state": {
+										"modalTitle": "",
+										"fields": [],
+										"buttons": [
+											{
+												"title": "OK",
+												"buttonStyle": "confirm"
+											},
+											{
+												"title": "Cancel"
+											}
+										]
+									},
+									"_promiseResolve": null,
+									"_promiseReject": null,
+									"atfHelper": {}
+								},
+								"child": null,
+								"sibling": null,
+								"index": 2,
+								"pendingProps": null,
+								"updateQueue": null,
+								"internalContextTag": 0,
+								"effectTag": 129,
+								"nextEffect": null,
+								"firstEffect": null,
+								"lastEffect": null,
+								"expirationTime": 0,
+								"alternate": null
+							},
+							"expirationTime": 0,
+							"alternate": null
+						},
+						"sibling": {
+							"tag": 2,
+							"key": "SnIFrameWrapperModal",
+							"stateNode": {
+								"state": {
+									"show": false,
+									"modalTitle": "",
+									"src": "",
+									"size": "xl"
+								},
+								"_promiseResolve": null,
+								"_promiseReject": null
+							},
+							"child": null,
+							"index": 1,
+							"pendingProps": null,
+							"updateQueue": null,
+							"internalContextTag": 0,
+							"effectTag": 129,
+							"nextEffect": null,
+							"firstEffect": null,
+							"lastEffect": null,
+							"expirationTime": 0,
+							"alternate": null
+						},
+						"index": 0,
+						"pendingProps": null,
+						"updateQueue": null,
+						"internalContextTag": 0,
+						"effectTag": 129,
+						"nextEffect": null,
+						"expirationTime": 0,
+						"alternate": null
+					}
+				}
+			},
+			"customModals": {},
+			"registeredCustomModals": [],
+			"_readyPromise": {},
+			"modalsRegistered": true,
+			"queuedOnloadModals": [],
+			"_parentId": "glide_form_11659725619217"
+		},
+		"currentUser": {},
+		"hideDetails": false,
+		"hasErrorMessage": false,
+		"isAttachmentUploadDisabled": false,
+		"serializedChanges": "[]",
+		"tabRoutes": [
+			{
+				"route": "details",
+				"fields": {
+					"details": true
+				},
+				"label": "Details"
+			}
+		],
+		"detailsProps": {
+			"table": "x_snc_trackit_stock_location",
+			"sysId": "-1",
+			"view": "Default view",
+			"serializedChanges": "[]",
+			"encodedRecord": "SBSvOy+GbxSDJtj0vJAayzV/qWcyOE8q4EMFFoLtc3K6hnAvHKGA12pK+8qme9mnegli1J4VD/bFpRTnrLvQFIni0oHXqiRrauImStqpV6k1EIobRv6R6p+ywYxmOHCjOXNYeTbc900POkiDxLBvuXvxWuRbla1d5c6JTm2o5qO5yZRyBPP+w/oRd5SxCt6wP17yJktK9Lw=",
+			"defaultDisplayedPane": "left",
+			"defaultDividerPosition": 63
+		}
+	};	
+
+
+	return sectionOBJ;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 14:32:12</sys_created_on>
+        <sys_id>f0ec9e8b97abc1101d7f796e6253afe4</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Max Form DB</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_f0ec9e8b97abc1101d7f796e6253afe4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-05 18:55:41</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=f0ec9e8b97abc1101d7f796e6253afe4"/>
+</record_update>

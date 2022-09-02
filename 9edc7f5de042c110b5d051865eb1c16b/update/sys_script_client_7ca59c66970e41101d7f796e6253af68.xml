@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>choice_list_one</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Call User Lang SI</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	var userLang = '';
+	var langGA = new GlideAjax('x_snc_trackit.UserUtils');
+	langGA.addParam('sysparm_name','getLanguage');
+	langGA.getXML(langParse);
+
+	
+
+	function langParse(response){
+		var answer = response.responseXML.documentElement.getAttribute("answer"); 
+		userLang = answer;		
+
+	}
+
+				alert('language is English or ' + userLang);
+				
+				alert('language is Spanish or ' + userLang);
+				
+		
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-08 01:55:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ca59c66970e41101d7f796e6253af68</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Call User Lang SI</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_script_client_7ca59c66970e41101d7f796e6253af68</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-08 15:08:57</sys_updated_on>
+        <table>x_snc_trackit_max_s_table</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

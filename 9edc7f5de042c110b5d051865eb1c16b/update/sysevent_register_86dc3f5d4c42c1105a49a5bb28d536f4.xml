@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description>Sent email to employees and inventory manager about overdue items</description>
+        <event_name>x_snc_trackit.inventory_overdue</event_name>
+        <fired_by>Sent email to employees and inventory manager about overdue items</fired_by>
+        <queue/>
+        <suffix>inventory_overdue</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:40</sys_created_on>
+        <sys_id>86dc3f5d4c42c1105a49a5bb28d536f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_trackit.inventory_overdue</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sysevent_register_86dc3f5d4c42c1105a49a5bb28d536f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:40</sys_updated_on>
+        <table>x_snc_trackit_inventory_request</table>
+    </sysevent_register>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream">
+    <sys_sg_item_stream action="INSERT_OR_UPDATE">
+        <data_item display_value="Browse Catalog Data Item">86dc3f5d0542c110d9e0f2fcf6cac2f6</data_item>
+        <interleaved_field/>
+        <name>Browse Catalog Item Stream</name>
+        <sys_class_name>sys_sg_item_stream</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:01</sys_created_on>
+        <sys_id>4adc3f5d2d42c110493043f11f0e0cfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Browse Catalog Item Stream</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_item_stream_4adc3f5d2d42c110493043f11f0e0cfc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:01</sys_updated_on>
+        <table>x_snc_trackit_inventory_control</table>
+    </sys_sg_item_stream>
+</record_update>

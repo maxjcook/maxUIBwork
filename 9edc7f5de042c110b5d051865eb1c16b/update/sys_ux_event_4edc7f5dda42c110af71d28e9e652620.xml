@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>ITEM_CLICKED</event_name>
+        <interfaces/>
+        <label>Item Clicked</label>
+        <props>[{"name":"sysId","fieldType":"","label":"Sys ID","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false}]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:15</sys_created_on>
+        <sys_id>4edc7f5dda42c110af71d28e9e652620</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Item Clicked</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_event_4edc7f5dda42c110af71d28e9e652620</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:15</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=4edc7f5dda42c110af71d28e9e652620"/>
+</record_update>

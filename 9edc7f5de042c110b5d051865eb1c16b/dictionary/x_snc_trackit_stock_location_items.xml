@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Stock Location Items" max_length="40" name="x_snc_trackit_stock_location_items" sizeclass="13" type="collection">
+        <element display="true" label="Item" max_length="40" name="item" type="string"/>
+        <element label="Stock Location Parent" max_length="32" name="stock_location_parent" reference="x_snc_trackit_stock_location" type="reference"/>
+        <index name="index">
+            <element name="stock_location_parent"/>
+        </index>
+    </element>
+</database>

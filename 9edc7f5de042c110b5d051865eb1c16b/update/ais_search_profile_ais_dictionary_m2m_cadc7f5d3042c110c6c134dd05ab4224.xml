@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="x_snc_trackit_inventory_search_2_default">cedc3f5d4942c11061e7f1ad24db65d2</dictionary>
+        <dictionary_reference_qualifier/>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="Inventory tracker  Mobile Search">c2dc7f5ddb42c1101056c43b58c63702</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:48</sys_created_on>
+        <sys_id>cadc7f5d3042c110c6c134dd05ab4224</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_cadc7f5d3042c110c6c134dd05ab4224</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:48</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>

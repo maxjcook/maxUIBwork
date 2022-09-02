@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_icon">
+    <sys_sg_icon action="INSERT_OR_UPDATE">
+        <icon/>
+        <name>Request item Form Icon</name>
+        <sys_class_name>sys_sg_icon</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:38</sys_created_on>
+        <sys_id>46dc3f5d3c42c11044fd6aef1ff86df7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request item Form Icon</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_icon_46dc3f5d3c42c11044fd6aef1ff86df7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:38</sys_updated_on>
+        <type>font</type>
+    </sys_sg_icon>
+</record_update>

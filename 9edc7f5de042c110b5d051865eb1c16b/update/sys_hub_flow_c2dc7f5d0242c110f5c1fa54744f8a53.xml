@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>x_snc_inventory_0.inventory_tracker_requ</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger➛Inventory request Record","reference":"x_snc_trackit_inventory_request","reference_display":"Inventory request","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <master_snapshot>82dc7f5df842c110ef44cbca20df5d53</master_snapshot>
+        <name>Inventory tracker Request Cancelled - Admin/Manager</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>46dc7f5d7742c1105917ff078cfbce53</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c2dc7f5d0242c110f5c1fa54744f8a53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory tracker Request Cancelled - Admin/Manager</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_hub_flow_c2dc7f5d0242c110f5c1fa54744f8a53</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_trackit_inventory_request">request_statusCHANGESTOcanceled<item display_value="Canceled" endquery="false" field="request_status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="canceled"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>46dc7f5d7742c1105917ff078cfbce53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <table>x_snc_trackit_inventory_request</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"86dc7f5d5b42c110de3d843dd45a4753","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>c2dc7f5d0242c110f5c1fa54744f8a53</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>86dc7f5d5b42c110de3d843dd45a4753</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <trigger display_value="">46dc7f5d7742c1105917ff078cfbce53</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>86dc7f5d5b42c110de3d843dd45a4753</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>c6dc7f5d3b42c1101ee251f9cb09b153</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=c2dc7f5d0242c110f5c1fa54744f8a53^sys_idNOT IN86dc7f5d5b42c110de3d843dd45a4753"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c2dc7f5d0242c110f5c1fa54744f8a53^sys_idNOT IN0adc7f5d3942c110b1c18da89d851653"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Inventory tracker Request Cancelled - Admin/Manager">c2dc7f5d0242c110f5c1fa54744f8a53</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>0adc7f5d3942c110b1c18da89d851653</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0adc7f5d3942c110b1c18da89d851653"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0adc7f5d3942c110b1c18da89d851653</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>4adc7f5d6d42c110a8353ee58d1d3d53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>request_statusCHANGESTOcanceled</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0adc7f5d3942c110b1c18da89d851653</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>8adc7f5d2142c1103efa0fdc9e95c953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0adc7f5d3942c110b1c18da89d851653</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>cadc7f5dea42c110b134a9dd34652f53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>x_snc_trackit_inventory_request</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=0adc7f5d3942c110b1c18da89d851653"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c2dc7f5d0242c110f5c1fa54744f8a53^sys_idNOT IN0edc7f5d8842c110eea71eed74da3a53"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c2dc7f5d0242c110f5c1fa54744f8a53</id>
+        <name>Inventory tracker Request Cancelled - Admin/Manager</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>0edc7f5d8842c110eea71eed74da3a53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0edc7f5d8842c110eea71eed74da3a53"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c2dc7f5d0242c110f5c1fa54744f8a53^sys_idNOT IN02dc7f5d0542c1104b224d292504c454,4edc7f5d9942c110c555aa6f77a82953,8edc7f5d1a42c110625ad363761c4353"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Inventory tracker Request Cancelled - Admin/Manager">c2dc7f5d0242c110f5c1fa54744f8a53</model>
+        <model_id>c2dc7f5d0242c110f5c1fa54744f8a53</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c2dc7f5d0242c110f5c1fa54744f8a53</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>02dc7f5d0542c1104b224d292504c454</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Inventory tracker Request Cancelled - Admin/Manager">c2dc7f5d0242c110f5c1fa54744f8a53</model>
+        <model_id>c2dc7f5d0242c110f5c1fa54744f8a53</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c2dc7f5d0242c110f5c1fa54744f8a53</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>4edc7f5d9942c110c555aa6f77a82953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD1a7ce10eaf322010ebf54025638d4304,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Inventory tracker Request Cancelled - Admin/Manager">c2dc7f5d0242c110f5c1fa54744f8a53</model>
+        <model_id>c2dc7f5d0242c110f5c1fa54744f8a53</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c2dc7f5d0242c110f5c1fa54744f8a53</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>8edc7f5d1a42c110625ad363761c4353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c2dc7f5d0242c110f5c1fa54744f8a53^sys_idNOT IN42dc7f5d4242c1101566cdc27bf71154,46dc7f5d6542c1103b9b00adc4dc5354"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Inventory tracker Request Cancelled - Admin/Manager">c2dc7f5d0242c110f5c1fa54744f8a53</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>42dc7f5d4242c1101566cdc27bf71154</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <ui_id>76ad7871-33fe-46dc-bec7-6f5604501719</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=42dc7f5d4242c1101566cdc27bf71154"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>42dc7f5d4242c1101566cdc27bf71154</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>82dc7f5d4b42c11000446b909de77254</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>cadc3f5d8c42c11063e2d5beb053cede</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>42dc7f5d4242c1101566cdc27bf71154</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>c2dc7f5d1442c1108d9ef18f36348654</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>x_snc_trackit_inventory_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=42dc7f5d4242c1101566cdc27bf71154"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>42dc7f5d4242c1101566cdc27bf71154</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>06dc7f5d1042c1104b54636141262454</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=42dc7f5d4242c1101566cdc27bf71154"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=42dc7f5d4242c1101566cdc27bf71154"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Inventory tracker Request Cancelled - Admin/Manager">c2dc7f5d0242c110f5c1fa54744f8a53</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>46dc7f5d6542c1103b9b00adc4dc5354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <ui_id>37cdd97a-5a14-4787-98c1-273a5caa99c4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=46dc7f5d6542c1103b9b00adc4dc5354"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>46dc7f5d6542c1103b9b00adc4dc5354</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>86dc7f5dec42c1108b0e5e9aa14d9554</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>x_snc_trackit_inventory_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>46dc7f5d6542c1103b9b00adc4dc5354</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>c6dc7f5d0542c110ae26035092918d54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>cedc3f5d7242c1105573ef7e42dc9cf0</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=46dc7f5d6542c1103b9b00adc4dc5354"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>46dc7f5d6542c1103b9b00adc4dc5354</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>0adc7f5d3a42c11053ad29c33012d654</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=46dc7f5d6542c1103b9b00adc4dc5354"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=46dc7f5d6542c1103b9b00adc4dc5354"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c2dc7f5d0242c110f5c1fa54744f8a53^sys_idNOT IN4adc7f5daf42c1108c6cf9abe97b9e54"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"8984eb02c0f728105ae3721c20f24706","name":"plan","plan_signature":null}}</plan>
+        <plan_id>c2dc7f5d0242c110f5c1fa54744f8a53</plan_id>
+        <snapshot>cadc7f5d5942c1105daaf795e7ada454</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4adc7f5daf42c1108c6cf9abe97b9e54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <trigger display_value="">46dc7f5d7742c1105917ff078cfbce53</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c2dc7f5d0242c110f5c1fa54744f8a53"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>x_snc_inventory_0.inventory_tracker_requ</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger➛Inventory request Record","reference":"x_snc_trackit_inventory_request","reference_display":"Inventory request","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Inventory tracker Request Cancelled - Admin/Manager</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Inventory tracker Request Cancelled - Admin/Manager">c2dc7f5d0242c110f5c1fa54744f8a53</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82dc7f5df842c110ef44cbca20df5d53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_variable_value action="delete_multiple" query="document_key=82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=82dc7f5df842c110ef44cbca20df5d53^sys_idNOT IN0edc7f5d4942c11018a9e6d39b5f4b54"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Inventory tracker Request Cancelled - Admin/Manager">82dc7f5df842c110ef44cbca20df5d53</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>0edc7f5d4942c11018a9e6d39b5f4b54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0edc7f5d4942c11018a9e6d39b5f4b54"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0edc7f5d4942c11018a9e6d39b5f4b54</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>4edc7f5d8442c110ad8404f6adf36154</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>request_statusCHANGESTOcanceled</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0edc7f5d4942c11018a9e6d39b5f4b54</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>8edc7f5d6142c1101e83e7ac57ca3254</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0edc7f5d4942c11018a9e6d39b5f4b54</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>cedc7f5d8e42c110fded497cac439a54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>x_snc_trackit_inventory_request</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=0edc7f5d4942c11018a9e6d39b5f4b54"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=82dc7f5df842c110ef44cbca20df5d53^sys_idNOT IN02dc7f5d3842c110fd40254bdcfb1055"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>82dc7f5df842c110ef44cbca20df5d53</id>
+        <name>Inventory tracker Request Cancelled - Admin/Manager</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>02dc7f5d3842c110fd40254bdcfb1055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=02dc7f5d3842c110fd40254bdcfb1055"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=82dc7f5df842c110ef44cbca20df5d53^sys_idNOT IN42dc7f5dfc42c110f2f3c6c740921a55,82dc7f5daa42c1103e07af101307c855,c2dc7f5dd442c11025069f5033c8ad55"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Inventory tracker Request Cancelled - Admin/Manager">82dc7f5df842c110ef44cbca20df5d53</model>
+        <model_id>82dc7f5df842c110ef44cbca20df5d53</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_82dc7f5df842c110ef44cbca20df5d53</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>42dc7f5dfc42c110f2f3c6c740921a55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Inventory tracker Request Cancelled - Admin/Manager">82dc7f5df842c110ef44cbca20df5d53</model>
+        <model_id>82dc7f5df842c110ef44cbca20df5d53</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_82dc7f5df842c110ef44cbca20df5d53</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>82dc7f5daa42c1103e07af101307c855</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD357ca10e613220103271137992be359b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Inventory tracker Request Cancelled - Admin/Manager">82dc7f5df842c110ef44cbca20df5d53</model>
+        <model_id>82dc7f5df842c110ef44cbca20df5d53</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_82dc7f5df842c110ef44cbca20df5d53</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>c2dc7f5dd442c11025069f5033c8ad55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=82dc7f5df842c110ef44cbca20df5d53^sys_idNOT IN06dc7f5d3542c11079b57c0a5a39c355,4adc7f5db342c1107c9d4862ad826755"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Inventory tracker Request Cancelled - Admin/Manager">82dc7f5df842c110ef44cbca20df5d53</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>06dc7f5d3542c11079b57c0a5a39c355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <ui_id>37cdd97a-5a14-4787-98c1-273a5caa99c4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=06dc7f5d3542c11079b57c0a5a39c355"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>06dc7f5d3542c11079b57c0a5a39c355</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>86dc7f5d4b42c1103ef9b4476a804d55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>x_snc_trackit_inventory_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>06dc7f5d3542c11079b57c0a5a39c355</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>c6dc7f5d1042c110574d33fa33a97c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>cedc3f5d7242c1105573ef7e42dc9cf0</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=06dc7f5d3542c11079b57c0a5a39c355"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>06dc7f5d3542c11079b57c0a5a39c355</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>0adc7f5da142c1101f4a5566349dd455</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=06dc7f5d3542c11079b57c0a5a39c355"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=06dc7f5d3542c11079b57c0a5a39c355"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Inventory tracker Request Cancelled - Admin/Manager">82dc7f5df842c110ef44cbca20df5d53</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>4adc7f5db342c1107c9d4862ad826755</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <ui_id>76ad7871-33fe-46dc-bec7-6f5604501719</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4adc7f5db342c1107c9d4862ad826755"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4adc7f5db342c1107c9d4862ad826755</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>8adc7f5d8142c11092ee7f67687a5e55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>x_snc_trackit_inventory_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4adc7f5db342c1107c9d4862ad826755</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>cadc7f5ddc42c110f842dc1492db8555</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <value>cadc3f5d8c42c11063e2d5beb053cede</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4adc7f5db342c1107c9d4862ad826755"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4adc7f5db342c1107c9d4862ad826755</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:50</sys_created_on>
+        <sys_id>0edc7f5d1442c11053ba38cca1c3b155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4adc7f5db342c1107c9d4862ad826755"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4adc7f5db342c1107c9d4862ad826755"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_82dc7f5df842c110ef44cbca20df5d53^sys_idNOT IN8adc7f5d7542c1106ea47e561dd3313d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_82dc7f5df842c110ef44cbca20df5d53</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by/>
+        <sys_created_on/>
+        <sys_id>8adc7f5d7542c1106ea47e561dd3313d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c184eb02a2f72810886d6f84f524d505_current_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_82dc7f5df842c110ef44cbca20df5d53"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>c2dc7f5d0242c110f5c1fa54744f8a53</sys_id>
+        <latest_snapshot>82dc7f5df842c110ef44cbca20df5d53</latest_snapshot>
+        <compiler_build>glide-trackapptemplates-12-11-2020_06-05-2021_0000.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

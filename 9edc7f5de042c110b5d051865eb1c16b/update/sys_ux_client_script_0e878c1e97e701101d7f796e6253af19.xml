@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="max no record template">f1878c1e97e701101d7f796e6253af06</macroponent>
+        <name>resultLOG</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+var arr = [];
+// var len = api.data.look_up_records_1.results.length();
+console.log('lookup: ' + api.data.look_up_records_1.results);
+console.log('lookup: ' + api.data.look_up_records_1.results.length);
+for(var i = 0; i<api.data.look_up_records_1.results.length; i++)
+{
+    var myObj = {};
+    console.log('in loop');
+    myObj.id = api.data.look_up_records_1.results[i].sys_id.value;
+    myObj.label = api.data.look_up_records_1.results[i].name.value;
+    
+    arr.push(myObj);
+   // console.log('name value:: ' + api.data.look_up_records_1.results[i].name.value);
+   // console.log('sysid value:: ' + api.data.look_up_records_1.results[i].sys_id.value);
+
+
+}
+
+
+const maxTest = api.data.gr.output.data.GlideRecord_Query.x_snc_trackit_max_s_table._results[0].u_reference_1.displayValue;
+
+console.log('any log');
+console.log('my test ' + maxTest);
+
+
+  var myGR = api.data.gr.output.data.GlideRecord_Query.x_snc_trackit_max_s_table._results.sys_id;
+  var maxGR = api.data.GR.x_snc_trackit_max_s_table._results.sys_id.value;
+console.log("my gr = " + maxGR);
+console.log('my arr item 1.name: ' + arr[0].label);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-20 19:42:03</sys_created_on>
+        <sys_id>0e878c1e97e701101d7f796e6253af19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>resultLOG</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_client_script_0e878c1e97e701101d7f796e6253af19</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-20 19:42:03</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

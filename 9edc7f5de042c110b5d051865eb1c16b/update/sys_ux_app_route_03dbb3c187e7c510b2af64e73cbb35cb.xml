@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="TrackIT Config222">532bb78187e7c510b2af64e73cbb35a6</app_config>
+        <description/>
+        <fields>table,sysId</fields>
+        <icon/>
+        <name>record</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>record</route_type>
+        <screen_type display_value="record">e1db3f8187e7c510b2af64e73cbb351e</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-17 16:17:08</sys_created_on>
+        <sys_id>03dbb3c187e7c510b2af64e73cbb35cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>record</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_app_route_03dbb3c187e7c510b2af64e73cbb35cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-17 16:17:19</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=03dbb3c187e7c510b2af64e73cbb35cb"/>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="workspace_user" name="workspace_user">3bf8d5b65344130084acddeeff7b122b</contains>
+        <role display_value="x_snc_trackit.admin" name="x_snc_trackit.admin">0adc7f5d9742c1101a8572fe20b3a252</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:15</sys_created_on>
+        <sys_id>8edc7f5d1142c110ea4904e4a459c61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>workspace_user.x_snc_trackit.admin</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_user_role_contains_8edc7f5d1142c110ea4904e4a459c61e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:15</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

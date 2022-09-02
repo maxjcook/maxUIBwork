@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_snc_trackit_inventory_control</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="Browse Catalog Form">cedc3f5d5542c110eca7dd96e66107f6</embedded_screen>
+        <item_view/>
+        <name>Browse Catalog Main Item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:15</sys_created_on>
+        <sys_id>cedc3f5d0742c1108aa7a17477a305f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Browse Catalog Main Item</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_master_item_cedc3f5d0742c1108aa7a17477a305f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:15</sys_updated_on>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="Browse Catalog View Config">8edc3f5de342c110208d2483b9920efe</view_config>
+    </sys_sg_master_item>
+</record_update>

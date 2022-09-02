@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Inventory Information" section_id="cedc7f5dc242c1104d2c8e205c9c870d" sys_domain="global" table="x_snc_trackit_inventory_control" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>value</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>8adc7f5da742c110225fbcb03cf4d515</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>cadc7f5d0d42c1104cdfc396505fa315</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>in_stock</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>0edc7f5d5e42c110622ef0ebde1c9e15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>4edc7f5d4542c1105c0e7a3aa4ce8c15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>stock_location</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>8edc7f5d1e42c1106ec9dcfa0c560d15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>cedc7f5d4942c110f037c2d1d74e6015</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reorder_level</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>02dc7f5d4942c110c8dd6d3060c5c016</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>42dc7f5dbb42c110be8edb123fb81916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>on_loan</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>c2dc7f5d3a42c1102ea1b8bdc1266416</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>06dc7f5ddb42c110c6e2d4d1c2e2db16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loan_duration</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>46dc7f5dac42c110db5160368b961416</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>86dc7f5d6642c11083cbd971923f9616</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>inventory_status</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>c6dc7f5d9642c11058aa0eec7de10e16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>0adc7f5d4542c110e0bedfdff07a1e16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reorder_status</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_id>4adc7f5d6642c11038ef9044e9920c16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Inventory Information" display_value="Inventory Information" name="x_snc_trackit_inventory_control" sys_domain="global" view="Default view">cedc7f5dc242c1104d2c8e205c9c870d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Inventory Information</caption>
+            <header>false</header>
+            <name>x_snc_trackit_inventory_control</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cedc7f5dc242c1104d2c8e205c9c870d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_trackit_inventory_control</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+            <sys_update_name>sys_ui_section_cedc7f5dc242c1104d2c8e205c9c870d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
+    <sys_ux_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_name>x_snc_trackit.Inventory Manager</api_name>
+        <description/>
+        <name>Inventory Manager</name>
+        <roles>8adc7f5d6f42c11064840b1ac7d5ec38,2831a114c611228501d4ea6c309d626d</roles>
+        <sys_class_name>sys_ux_applicability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>42dc7f5dfe42c1103c564815000bb321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory Manager</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_applicability_42dc7f5dfe42c1103c564815000bb321</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:28</sys_updated_on>
+    </sys_ux_applicability>
+</record_update>

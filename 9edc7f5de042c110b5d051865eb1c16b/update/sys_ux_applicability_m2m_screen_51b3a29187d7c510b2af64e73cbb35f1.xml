@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Public">46dc7f5d5f42c1107902d6de1c86dd21</applicability>
+        <order>0</order>
+        <screen display_value="max portal record default">9e6d144d97df85101d7f796e6253af92</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-05 18:14:47</sys_created_on>
+        <sys_id>51b3a29187d7c510b2af64e73cbb35f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_51b3a29187d7c510b2af64e73cbb35f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-05 18:14:47</sys_updated_on>
+    </sys_ux_applicability_m2m_screen>
+</record_update>

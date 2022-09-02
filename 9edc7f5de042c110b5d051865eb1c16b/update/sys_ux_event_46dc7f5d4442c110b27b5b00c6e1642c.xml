@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>NAV_ITEM_SELECTED_RELAY_0edc7f5d0342c1101a50b8aaf9e39720</event_name>
+        <interfaces/>
+        <label>Link to destination Relay (New and restocked Default)</label>
+        <props>[{"name":"route","fieldType":"string","interfaceApiName":"global.route","label":"Route type"},{"name":"fields","fieldType":"json","interfaceApiName":"global.route","label":"Route fields"},{"name":"params","fieldType":"json","interfaceApiName":"global.route","label":"Optionals parameters"},{"name":"redirect","fieldType":"boolean","interfaceApiName":null,"label":"Remove previous URL from browser history"},{"name":"passiveNavigation","fieldType":"boolean","interfaceApiName":null,"label":"Load in background (advanced)"},{"name":"title","fieldType":"string","interfaceApiName":null,"label":"Title (advanced)"},{"name":"multiInstField","fieldType":"string","interfaceApiName":null,"label":"Multi-instance field (advanced)"},{"name":"targetRoute","fieldType":"string","interfaceApiName":null,"label":"Sub-navigation route (advanced)"},{"name":"external","fieldType":"json","interfaceApiName":"global.route","label":"External URL object"}]</props>
+        <required_translations>[{"message":"Route type","comment":""},{"message":"Optionals parameters","comment":""},{"message":"Load in background (advanced)","comment":""},{"message":"Sub-navigation route (advanced)","comment":""},{"message":"External URL object","comment":""},{"message":"Remove previous URL from browser history","comment":""},{"message":"Route fields","comment":""},{"message":"Title (advanced)","comment":""},{"message":"Multi-instance field (advanced)","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:47</sys_created_on>
+        <sys_id>46dc7f5d4442c110b27b5b00c6e1642c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Link to destination Relay (New and restocked Default)</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_event_46dc7f5d4442c110b27b5b00c6e1642c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:47</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=46dc7f5d4442c110b27b5b00c6e1642c"/>
+</record_update>

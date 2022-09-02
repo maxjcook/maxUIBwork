@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_rule_action">
+    <sys_sg_ui_rule_action action="INSERT_OR_UPDATE">
+        <operation display_value="Set Visibility">7e75bedc5b031010da168d8fa881c710</operation>
+        <order>10</order>
+        <sys_class_name>sys_sg_ui_rule_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:54</sys_created_on>
+        <sys_id>cadc7f5d3d42c11055eda561e5298d02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_ui_rule_action_cadc7f5d3d42c11055eda561e5298d02</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:54</sys_updated_on>
+        <target>name</target>
+        <ui_rule display_value="Hide Request item field">42dc7f5d1e42c110cb4e5b4da7163f02</ui_rule>
+        <value>false</value>
+    </sys_sg_ui_rule_action>
+</record_update>

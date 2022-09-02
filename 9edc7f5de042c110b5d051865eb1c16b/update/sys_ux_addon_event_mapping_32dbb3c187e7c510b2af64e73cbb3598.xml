@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Reference Search field decorator wired to Standard Record Page's Open Modal</description>
+        <name>record default Record Page Tabs Reference Search</name>
+        <parent_macroponent display_value="Record">25db73c187e7c510b2af64e73cbb3523</parent_macroponent>
+        <source_da display_value="ref_search">c6542741ff13101035be517f793bf1bb</source_da>
+        <source_element_id>record_page_tabs_1</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-17 16:17:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>32dbb3c187e7c510b2af64e73cbb3598</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>record default Record Page Tabs Reference Search</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agent Workspace - Declarative Actions" source="com.snc.agent_workspace.declarative_actions">a377ba6d61d40110c0a0df2cd71e2d1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_32dbb3c187e7c510b2af64e73cbb3598</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-17 16:17:08</sys_updated_on>
+        <target_event display_value="RECORD#OPEN_MODAL">509663140f0310107d20409dc4767e00</target_event>
+        <target_payload_mapping>{
+	  "type": "MAP_CONTAINER",
+	  "container": {
+		"route": {
+		  "type": "JSON_LITERAL",
+		  "value": "modal_ref_lookup"
+		},
+		"size": {
+		  "type": "JSON_LITERAL", 
+		  "value": "lg"
+		},
+		"fields": {
+		  "type": "MAP_CONTAINER",
+		  "container": {
+			"table": {
+			  "type": "EVENT_PAYLOAD_BINDING",
+			  "binding": {
+				"address": ["parentTable"]
+			  }
+			},
+			"sysId": {
+			  "type": "EVENT_PAYLOAD_BINDING",
+			  "binding": {
+				"address": ["parentSysId"]
+			  }
+			},
+			"size": {
+			  "type": "JSON_LITERAL",
+			  "value": "md"
+			},
+			"referenceField": {
+			  "type": "EVENT_PAYLOAD_BINDING",
+			  "binding": {
+				"address": ["referenceField"]
+			  }
+			},
+			"label": {
+			  "type": "EVENT_PAYLOAD_BINDING",
+			  "binding": {
+				"address": ["fieldLabel"]
+			  }
+			},
+			"serializedChanges": {
+						"type": "EVENT_PAYLOAD_BINDING",
+						"binding": {
+							"address": [
+								"serializedChanges"
+							]
+						}
+					},
+			  "encodedRecord": {
+						"type": "EVENT_PAYLOAD_BINDING",
+						"binding": {
+							"address": [
+								"encodedRecord"
+							]
+						}
+					}
+		  }
+		},
+		"params": {
+		  "type": "JSON_LITERAL",
+		  "value": {}
+		}
+	  }
+	}</target_payload_mapping>
+    </sys_ux_addon_event_mapping>
+</record_update>

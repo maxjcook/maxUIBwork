@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_trackit.Max Group Lookup</api_name>
+        <description>looks up members of this group and returns array</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Max Group Lookup</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[//0a52d3dcd7011200f2d224837e6103f2 user group sys
+function transform(input){
+	var myArr = [];
+	var grMem = new GlideRecord('sys_user_grmember');
+	grMem.addQuery('group','0a52d3dcd7011200f2d224837e6103f2');
+	grMem.query();
+
+	while(grMem.next()){
+		var members = {};
+		var email = new GlideRecord('sys_user');
+		email.get(grMem.getValue('user'));
+		
+		members.sublabel = email.getValue('email');
+		members.id = grMem.getValue('user').toString();
+		members.label = grMem.getDisplayValue('user');
+		myArr.push(members);
+	}
+
+	return myArr;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-15 14:45:32</sys_created_on>
+        <sys_id>4c15078287d5d110b2af64e73cbb3583</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Max Group Lookup</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_4c15078287d5d110b2af64e73cbb3583</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-19 20:08:17</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=4c15078287d5d110b2af64e73cbb3583"/>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>stock_location</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:37</sys_created_on>
+        <sys_id>06dc7f5d2042c110409922b646e9fe14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>stock_location</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ui_policy_action_06dc7f5d2042c110409922b646e9fe14</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:37</sys_updated_on>
+        <table>x_snc_trackit_inventory_request</table>
+        <ui_policy display_value="Make location readonly &amp; hide unnecessary fields">0adc7f5d9142c110c91b475ea553ff13</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

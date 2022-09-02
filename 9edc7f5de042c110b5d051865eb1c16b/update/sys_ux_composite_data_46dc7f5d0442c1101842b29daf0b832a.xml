@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data">
+    <sys_ux_composite_data action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <base_filter_label>Default</base_filter_label>
+        <name>Inventory Tracker Portal</name>
+        <query_parameters/>
+        <required_roles/>
+        <sort_order>descend</sort_order>
+        <sys_class_name>sys_ux_composite_data</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:57</sys_created_on>
+        <sys_id>46dc7f5d0442c1101842b29daf0b832a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory Tracker Portal</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_composite_data_46dc7f5d0442c1101842b29daf0b832a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:57</sys_updated_on>
+    </sys_ux_composite_data>
+</record_update>

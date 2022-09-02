@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="TrackIT Config">c73d504d97df85101d7f796e6253af5f</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "clccrmzyagaaaaccoddgiijjhhhaaxhhlkr",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_snc_trackit.SCREEN_STATUS_CHANGED_RELAY_d26d144d97df85101d7f796e6253af90",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "x_snc_trackit.SCREEN_STATUS_CHANGED_RELAY_d26d144d97df85101d7f796e6253af90",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.SCREEN_STATUS_CHANGED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "screenKey" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "screenKey" ]
+            }
+          },
+          "status" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "status" ]
+            }
+          },
+          "title" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "title" ]
+            }
+          },
+          "icon" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "icon" ]
+            }
+          },
+          "message" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "message" ]
+            }
+          },
+          "isDirty" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "isDirty" ]
+            }
+          },
+          "hasError" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "hasError" ]
+            }
+          },
+          "hasUpdate" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "hasUpdate" ]
+            }
+          },
+          "dirtyModalId" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "dirtyModalId" ]
+            }
+          },
+          "tooltipPreview" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "tooltipPreview" ]
+            }
+          },
+          "screenParams" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "screenParams" ]
+            }
+          }
+        }
+      },
+      "sysId" : "f71f58643791ec0183da148626eb757d"
+    },
+    "operation" : null,
+    "targetId" : "clccrmzyagaaaaccnddgiijjpyjodjjjr",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="Record">d26d144d97df85101d7f796e6253af90</macroponent>
+        <macroponent_config>{
+  "views" : "",
+  "selectedTabIndex" : 0,
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>max portal record default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="max portal record">d26dd04d97df85101d7f796e6253af6e</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:49:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9e6d144d97df85101d7f796e6253af92</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>max portal record default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_screen_9e6d144d97df85101d7f796e6253af92</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:50:27</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=9e6d144d97df85101d7f796e6253af92"/>
+</record_update>

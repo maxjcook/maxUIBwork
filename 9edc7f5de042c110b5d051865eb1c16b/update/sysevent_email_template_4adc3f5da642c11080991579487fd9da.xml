@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection/>
+        <email_layout display_value="Inventory Tracker Digest - Notifications ">8adc3f5d8042c110617aac0d5c7f65f1</email_layout>
+        <message/>
+        <message_html/>
+        <message_list/>
+        <message_text/>
+        <name>Inventory Tracker Digest - Notifications</name>
+        <sms_alternate/>
+        <subject/>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:03</sys_created_on>
+        <sys_id>4adc3f5da642c11080991579487fd9da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory Tracker Digest - Notifications</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sysevent_email_template_4adc3f5da642c11080991579487fd9da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:03</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

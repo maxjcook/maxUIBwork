@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="max no record template">f1878c1e97e701101d7f796e6253af06</macroponent>
+        <name>data results</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+
+const look = api.data.lookup_records_1.results._row_data.displayValue;
+
+console.log('lookup: ' + look);
+console.log('any log 1');
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-20 19:42:03</sys_created_on>
+        <sys_id>f9878c1e97e701101d7f796e6253af10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>data results</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_client_script_f9878c1e97e701101d7f796e6253af10</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-20 19:42:03</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

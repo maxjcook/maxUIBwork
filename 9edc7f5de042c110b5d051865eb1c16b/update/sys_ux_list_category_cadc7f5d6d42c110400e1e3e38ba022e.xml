@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list_category">
+    <sys_ux_list_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <configuration display_value="Inventory Tracker Admin Workspace Menu">8adc7f5d3242c1101f425a0f0c01d62e</configuration>
+        <description/>
+        <order>110</order>
+        <sys_class_name>sys_ux_list_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cadc7f5d6d42c110400e1e3e38ba022e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory requests</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_list_category_cadc7f5d6d42c110400e1e3e38ba022e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:07</sys_updated_on>
+        <title>Inventory requests</title>
+    </sys_ux_list_category>
+</record_update>

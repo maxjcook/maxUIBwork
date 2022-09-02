@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="default_stop_word_dictionary">9865058bc7031010d1cfd9795cc26037</dictionary>
+        <dictionary_reference_qualifier>STOPWORD</dictionary_reference_qualifier>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="Inventory Tracker Portal Search Profile">46dc3f5da642c1106844ccb03271ddf4</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:48</sys_created_on>
+        <sys_id>8adc7f5ded42c110ea4b4e83e5585b2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>default_stop_word_dictionary.</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_8adc7f5ded42c110ea4b4e83e5585b2b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:48</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>

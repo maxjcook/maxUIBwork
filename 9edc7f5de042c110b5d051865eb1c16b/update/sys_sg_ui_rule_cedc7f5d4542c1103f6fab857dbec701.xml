@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_rule">
+    <sys_sg_ui_rule action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition>text_07=open_loaner</condition>
+        <name>Open Loaner (Form View)</name>
+        <order/>
+        <parent_id>c2dc3f5d9f42c1109838ef9fcfc75ef7</parent_id>
+        <parent_table>sys_sg_view_config</parent_table>
+        <reverse_if_false>false</reverse_if_false>
+        <sys_class_name>sys_sg_ui_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:47</sys_created_on>
+        <sys_id>cedc7f5d4542c1103f6fab857dbec701</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open Loaner (Form View)</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_ui_rule_cedc7f5d4542c1103f6fab857dbec701</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:47</sys_updated_on>
+        <trigger>fd680bd85b431010da168d8fa881c7c8</trigger>
+    </sys_sg_ui_rule>
+</record_update>

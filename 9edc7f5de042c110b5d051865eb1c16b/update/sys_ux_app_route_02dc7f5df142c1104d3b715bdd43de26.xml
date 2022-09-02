@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Inventory Tracker Portal App Config Config">82dc7f5d4e42c110d9881ac3e0f94751</app_config>
+        <description/>
+        <fields>sysId</fields>
+        <icon/>
+        <name>Request Details</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>request-details</route_type>
+        <screen_type display_value="Request Details">cedc7f5d6c42c1106443470887a81e25</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:36</sys_created_on>
+        <sys_id>02dc7f5df142c1104d3b715bdd43de26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Details</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_app_route_02dc7f5df142c1104d3b715bdd43de26</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:36</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=02dc7f5df142c1104d3b715bdd43de26"/>
+</record_update>

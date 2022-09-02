@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_trackit_inventory_control" version="2" view="text_search">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_snc_trackit_inventory_control" element="NULL" name="x_snc_trackit_inventory_control" parent="NULL" relationship="NULL" sys_domain="global" view="0c029fc00a0a0b2c001aa3d4ed9f69e8">c6dc7f5dd642c11069d2b99c84e76711</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:25:55</sys_created_on>
+            <sys_id>0adc7f5d7f42c110ac36a9667bce5e11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:25:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>category</element>
+            <list_id display_value="x_snc_trackit_inventory_control" element="NULL" name="x_snc_trackit_inventory_control" parent="NULL" relationship="NULL" sys_domain="global" view="0c029fc00a0a0b2c001aa3d4ed9f69e8">c6dc7f5dd642c11069d2b99c84e76711</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:25:55</sys_created_on>
+            <sys_id>4adc7f5d5e42c110f859f924d7911911</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:25:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="x_snc_trackit_inventory_control" element="NULL" name="x_snc_trackit_inventory_control" parent="NULL" relationship="NULL" sys_domain="global" view="0c029fc00a0a0b2c001aa3d4ed9f69e8">c6dc7f5dd642c11069d2b99c84e76711</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:25:55</sys_created_on>
+            <sys_id>8adc7f5d0042c110a1de1ebaa9dab111</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:25:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>in_stock</element>
+            <list_id display_value="x_snc_trackit_inventory_control" element="NULL" name="x_snc_trackit_inventory_control" parent="NULL" relationship="NULL" sys_domain="global" view="0c029fc00a0a0b2c001aa3d4ed9f69e8">c6dc7f5dd642c11069d2b99c84e76711</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:25:55</sys_created_on>
+            <sys_id>cadc7f5dec42c1100eb3b73387511411</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:25:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>item_cost</element>
+            <list_id display_value="x_snc_trackit_inventory_control" element="NULL" name="x_snc_trackit_inventory_control" parent="NULL" relationship="NULL" sys_domain="global" view="0c029fc00a0a0b2c001aa3d4ed9f69e8">c6dc7f5dd642c11069d2b99c84e76711</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:25:55</sys_created_on>
+            <sys_id>0edc7f5d8342c110d1f10f5a7cb3e411</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:25:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>item_number</element>
+            <list_id display_value="x_snc_trackit_inventory_control" element="NULL" name="x_snc_trackit_inventory_control" parent="NULL" relationship="NULL" sys_domain="global" view="0c029fc00a0a0b2c001aa3d4ed9f69e8">c6dc7f5dd642c11069d2b99c84e76711</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:25:55</sys_created_on>
+            <sys_id>4edc7f5db442c11005431a398f7a4a11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:25:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>loan_duration</element>
+            <list_id display_value="x_snc_trackit_inventory_control" element="NULL" name="x_snc_trackit_inventory_control" parent="NULL" relationship="NULL" sys_domain="global" view="0c029fc00a0a0b2c001aa3d4ed9f69e8">c6dc7f5dd642c11069d2b99c84e76711</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:25:55</sys_created_on>
+            <sys_id>8edc7f5d7e42c110dbd5959686dc9311</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:25:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>manufacturer</element>
+            <list_id display_value="x_snc_trackit_inventory_control" element="NULL" name="x_snc_trackit_inventory_control" parent="NULL" relationship="NULL" sys_domain="global" view="0c029fc00a0a0b2c001aa3d4ed9f69e8">c6dc7f5dd642c11069d2b99c84e76711</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:25:55</sys_created_on>
+            <sys_id>cedc7f5d4442c1109e612c8189828111</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:25:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_trackit_inventory_control</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:25:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c6dc7f5dd642c11069d2b99c84e76711</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_trackit_inventory_control</sys_name>
+            <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_trackit_inventory_control_text_search</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:25:55</sys_updated_on>
+            <sys_user/>
+            <view display_value="Text_search" name="text_search">0c029fc00a0a0b2c001aa3d4ed9f69e8</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

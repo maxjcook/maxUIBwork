@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_trackit.Max ref qual</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Max ref qual</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+"name": "records",&#13;
+"label": "Enter a Sys Id",&#13;
+"fieldType":"string",&#13;
+"readOnly":false&#13;
+},&#13;
+{&#13;
+"name": "test",&#13;
+"label": "Enter a test",&#13;
+"fieldType":"string",&#13;
+"readOnly":false&#13;
+}&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Enter a Sys Id",
+  "comment" : ""
+}, {
+  "message" : "Enter a test",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input){
+	var myArr = [];
+	var theID = input.records;
+	gs.info('MJC: ' + theID);
+	
+	var gr = new GlideRecord("x_snc_trackit_stock_location_items");
+	gr.addQuery("stock_location_parent", theID);
+	gr.query();
+	while (gr.next()) {
+		var obj = {};
+		obj.id = gr.getValue('sys_id');
+		obj.label = gr.getDisplayValue('item');
+		myArr.push(obj);
+	}
+	return myArr;
+}
+]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-17 21:01:07</sys_created_on>
+        <sys_id>6d2b74d187abc510b2af64e73cbb3534</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Max ref qual</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_6d2b74d187abc510b2af64e73cbb3534</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-26 15:17:49</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=6d2b74d187abc510b2af64e73cbb3534"/>
+</record_update>

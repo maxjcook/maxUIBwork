@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Allow Admin and Manager roles to access workspace pages</description>
+        <name>now.x_snc_trackit-inventory-tracker.workspace.*</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:07</sys_created_on>
+        <sys_id>4adc3f5dc342c11039caa1a27693f7f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>now.x_snc_trackit-inventory-tracker.workspace.*</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_security_acl_4adc3f5dc342c11039caa1a27693f7f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:07</sys_updated_on>
+        <type display_value="ux_route">b9eb8a1b873303002941b53046cb1234</type>
+    </sys_security_acl>
+</record_update>

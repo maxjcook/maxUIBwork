@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout">
+    <sys_ux_form_action_layout action="INSERT_OR_UPDATE">
+        <action_config display_value="Inventory Tracker Workspace DA">02dc7f5d0a42c1105c09feeedd78421f</action_config>
+        <active>true</active>
+        <description/>
+        <name>Request Action Layout</name>
+        <specificity>10</specificity>
+        <sys_class_name>sys_ux_form_action_layout</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:15</sys_created_on>
+        <sys_id>c2dc7f5dc242c110a9dadcab91bfc22e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Action Layout</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_c2dc7f5dc242c110a9dadcab91bfc22e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:15</sys_updated_on>
+        <table>x_snc_trackit_inventory_request</table>
+    </sys_ux_form_action_layout>
+</record_update>

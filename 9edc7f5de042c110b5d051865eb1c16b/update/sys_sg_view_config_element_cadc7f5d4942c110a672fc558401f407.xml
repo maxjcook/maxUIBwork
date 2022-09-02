@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>text_05_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:43</sys_created_on>
+        <sys_id>cadc7f5d4942c110a672fc558401f407</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_05_element</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_cadc7f5d4942c110a672fc558401f407</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:43</sys_updated_on>
+        <view_config display_value="My Requests View Config">02dc3f5dbd42c1105121d4d1d3864cff</view_config>
+        <view_template_slot display_value="text_05">8adc7f5d2942c1100692087e91d5a305</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

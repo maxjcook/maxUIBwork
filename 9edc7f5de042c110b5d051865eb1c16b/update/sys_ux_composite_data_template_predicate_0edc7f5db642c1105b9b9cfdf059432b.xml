@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate">
+    <sys_ux_composite_data_template_predicate action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <custom_condition/>
+        <custom_field_list/>
+        <field_list>number,comments,count,on_loan_item,request_date,request_status,stock_location,requested_item,requestor,department</field_list>
+        <name>Inventory Request Search Results</name>
+        <order>200</order>
+        <predicate_bundle display_value="Inventory Tracker Portal">06dc7f5d5142c110c4bcac4aa2a30d2b</predicate_bundle>
+        <required_roles/>
+        <sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:39</sys_created_on>
+        <sys_id>0edc7f5db642c1105b9b9cfdf059432b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory Request Search Results</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_0edc7f5db642c1105b9b9cfdf059432b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:39</sys_updated_on>
+        <table>x_snc_trackit_inventory_request</table>
+        <ux_template display_value="Inventory Request">c6dc7f5dc842c110c9ed5418b894b82b</ux_template>
+    </sys_ux_composite_data_template_predicate>
+</record_update>

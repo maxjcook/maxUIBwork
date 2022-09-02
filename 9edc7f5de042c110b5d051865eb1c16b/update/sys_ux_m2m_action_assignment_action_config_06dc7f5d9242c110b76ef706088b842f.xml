@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_action_assignment_action_config">
+    <sys_ux_m2m_action_assignment_action_config action="INSERT_OR_UPDATE">
+        <action_assignment display_value="approve_request">4adc7f5d3342c110703a3a24b4b0b338</action_assignment>
+        <action_configuration display_value="Inventory Tracker Workspace DA">02dc7f5d0a42c1105c09feeedd78421f</action_configuration>
+        <sys_class_name>sys_ux_m2m_action_assignment_action_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+        <sys_id>06dc7f5d9242c110b76ef706088b842f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_m2m_action_assignment_action_config_06dc7f5d9242c110b76ef706088b842f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+    </sys_ux_m2m_action_assignment_action_config>
+</record_update>

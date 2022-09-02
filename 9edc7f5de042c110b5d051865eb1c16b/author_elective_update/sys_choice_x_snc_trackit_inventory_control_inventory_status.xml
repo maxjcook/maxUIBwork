@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="inventory_status" table="x_snc_trackit_inventory_control" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>inventory_status</element>
+            <name>x_snc_trackit_inventory_control</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_id>33fcf79d8742c110b2af64e73cbb359f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>inventory_status</sys_name>
+            <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+            <sys_update_name>sys_choice_x_snc_trackit_inventory_control_inventory_status</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:25</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>inventory_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ok</label>
+            <language>en</language>
+            <name>x_snc_trackit_inventory_control</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0edc7f5d6242c1102b95a3192b153c14</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:25</sys_updated_on>
+            <value>ok</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>inventory_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reorder</label>
+            <language>en</language>
+            <name>x_snc_trackit_inventory_control</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c6dc7f5d8742c110ab943397c5a8af15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:25</sys_updated_on>
+            <value>reorder</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>inventory_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>On-Loan</label>
+            <language>en</language>
+            <name>x_snc_trackit_inventory_control</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>82dc7f5d1542c110088bb333d927cd16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:25</sys_updated_on>
+            <value>on_loan</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>inventory_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Discontinued</label>
+            <language>en</language>
+            <name>x_snc_trackit_inventory_control</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-04 21:26:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8edc7f5d7642c110321206dfb580aa16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-04 21:26:25</sys_updated_on>
+            <value>discontinued</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

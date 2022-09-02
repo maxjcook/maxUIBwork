@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_chart_color_schemes">
+    <pa_chart_color_schemes action="INSERT_OR_UPDATE">
+        <color_1 display_value="Inventory#E3DA60">42dc3f5d3642c1109ef3c1a019006fd5</color_1>
+        <color_10/>
+        <color_11/>
+        <color_12/>
+        <color_13/>
+        <color_14/>
+        <color_15/>
+        <color_16/>
+        <color_17/>
+        <color_18/>
+        <color_19/>
+        <color_2 display_value="Inventory#C3DDF0">c6dc3f5dd642c110a8f0f9e616373dd6</color_2>
+        <color_20/>
+        <color_21/>
+        <color_22/>
+        <color_23/>
+        <color_24/>
+        <color_25/>
+        <color_26/>
+        <color_27/>
+        <color_28/>
+        <color_29/>
+        <color_3 display_value="Inventory#5456CF">0edc3f5d7742c1107192b9f330768bd5</color_3>
+        <color_30/>
+        <color_31/>
+        <color_32/>
+        <color_4 display_value="Inventory#CDF3F7">cadc3f5db942c1105860a752e34d6bd3</color_4>
+        <color_5/>
+        <color_6/>
+        <color_7/>
+        <color_8/>
+        <color_9/>
+        <description/>
+        <name>Inventory donut color</name>
+        <sys_class_name>pa_chart_color_schemes</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c2dc3f5d2d42c110eecd79ef10dcfbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory donut color</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>pa_chart_color_schemes_c2dc3f5d2d42c110eecd79ef10dcfbd9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+    </pa_chart_color_schemes>
+    <sys_translated_text action="delete_multiple" query="documentkey=c2dc3f5d2d42c110eecd79ef10dcfbd9"/>
+</record_update>

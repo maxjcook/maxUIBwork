@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_snc_trackit.invtrac_viewdetails_ad</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+	template.print('<a href="' + gs.getProperty('glide.servlet.uri') + 'now/x_snc_trackit-inventory-tracker/workspace/record/x_snc_trackit_stock_location/' + current.getUniqueValue() + '" style="text-decoration: none !important;padding: 5px 25px; background-color:#f9704e;">' + 'View Details' + '</a>');
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:08</sys_created_on>
+        <sys_id>82dc3f5d1542c1105a809d0bac898cef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_trackit.invtrac_viewdetails_ad</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_script_email_82dc3f5d1542c1105a809d0bac898cef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:08</sys_updated_on>
+    </sys_script_email>
+</record_update>

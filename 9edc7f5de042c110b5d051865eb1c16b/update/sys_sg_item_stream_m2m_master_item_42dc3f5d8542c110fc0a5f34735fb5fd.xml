@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_master_item">
+    <sys_sg_item_stream_m2m_master_item action="INSERT_OR_UPDATE">
+        <item_stream display_value="Request item Item Stream">0adc3f5d4d42c110f80603356d2cd4fc</item_stream>
+        <master_item display_value="Request item Main Item">82dc3f5dc842c11054b3a4a57192bcfd</master_item>
+        <sys_class_name>sys_sg_item_stream_m2m_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:04</sys_created_on>
+        <sys_id>42dc3f5d8542c110fc0a5f34735fb5fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_master_item_42dc3f5d8542c110fc0a5f34735fb5fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:04</sys_updated_on>
+    </sys_sg_item_stream_m2m_master_item>
+</record_update>

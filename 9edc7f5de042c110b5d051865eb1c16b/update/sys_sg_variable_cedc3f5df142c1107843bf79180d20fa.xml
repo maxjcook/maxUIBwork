@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_variable">
+    <sys_sg_variable action="INSERT_OR_UPDATE">
+        <name>comments</name>
+        <parameter_screen display_value="Request item">42dc3f5d4442c110087980b46c410bfa</parameter_screen>
+        <parameter_section/>
+        <sys_class_name>sys_sg_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:29</sys_created_on>
+        <sys_id>cedc3f5df142c1107843bf79180d20fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>comments</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_variable_cedc3f5df142c1107843bf79180d20fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:29</sys_updated_on>
+        <type>db_field</type>
+    </sys_sg_variable>
+</record_update>

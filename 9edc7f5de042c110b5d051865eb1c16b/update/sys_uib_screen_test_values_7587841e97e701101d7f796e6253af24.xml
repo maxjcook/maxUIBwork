@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config>{
+  "table" : "x_snc_trackit_max_s_table",
+  "sysId" : "cd71582a978a41101d7f796e6253afcc"
+}</macroponent_config>
+        <screen display_value="max no record template default">c4d024019713c5101d7f796e6253af55</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-20 19:42:02</sys_created_on>
+        <sys_id>7587841e97e701101d7f796e6253af24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_7587841e97e701101d7f796e6253af24</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-20 19:42:02</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>

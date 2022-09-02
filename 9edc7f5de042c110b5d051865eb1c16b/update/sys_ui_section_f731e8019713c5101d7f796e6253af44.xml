@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="f731e8019713c5101d7f796e6253af44" sys_domain="global" table="x_snc_trackit_max_s_table" version="3" view="workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>choice_list_one</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-04 14:06:18</sys_created_on>
+            <sys_id>3f31e8019713c5101d7f796e6253af47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_trackit_max_s_table" sys_domain="global" view="dab3b22d61140110c0a0df2cd71e2dc2">f731e8019713c5101d7f796e6253af44</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-04 14:06:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-04 14:06:18</sys_created_on>
+            <sys_id>b331e8019713c5101d7f796e6253af48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_trackit_max_s_table" sys_domain="global" view="dab3b22d61140110c0a0df2cd71e2dc2">f731e8019713c5101d7f796e6253af44</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-04 14:06:18</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>choice_list_two</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-04 14:06:18</sys_created_on>
+            <sys_id>3b31e8019713c5101d7f796e6253af48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_trackit_max_s_table" sys_domain="global" view="dab3b22d61140110c0a0df2cd71e2dc2">f731e8019713c5101d7f796e6253af44</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-04 14:06:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_reference_1</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-04 14:06:18</sys_created_on>
+            <sys_id>bf31e8019713c5101d7f796e6253af48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_trackit_max_s_table" sys_domain="global" view="dab3b22d61140110c0a0df2cd71e2dc2">f731e8019713c5101d7f796e6253af44</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-04 14:06:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_reference_2</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-04 14:06:18</sys_created_on>
+            <sys_id>3731e8019713c5101d7f796e6253af49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_trackit_max_s_table" sys_domain="global" view="dab3b22d61140110c0a0df2cd71e2dc2">f731e8019713c5101d7f796e6253af44</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-04 14:06:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-04 14:06:18</sys_created_on>
+            <sys_id>bb31e8019713c5101d7f796e6253af49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_trackit_max_s_table" sys_domain="global" view="dab3b22d61140110c0a0df2cd71e2dc2">f731e8019713c5101d7f796e6253af44</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-04 14:06:18</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_trackit_max_s_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-04 14:06:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f731e8019713c5101d7f796e6253af44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_trackit_max_s_table</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+            <sys_update_name>sys_ui_section_f731e8019713c5101d7f796e6253af44</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-04 14:06:18</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">dab3b22d61140110c0a0df2cd71e2dc2</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

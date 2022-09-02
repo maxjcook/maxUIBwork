@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Max's Table" max_length="40" name="x_snc_trackit_max_s_table" sizeclass="1" type="collection">
+        <element choice="1" label="Choice list one" max_length="40" name="choice_list_one" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" value="1"/>
+                <element inactive_on_update="false" label="Choice 2" value="2"/>
+            </choice>
+        </element>
+        <element choice="1" label="Choice list two" max_length="40" name="choice_list_two" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Option 1" value="1"/>
+                <element inactive_on_update="false" label="Option 2" value="2"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="New Reference" max_length="32" name="u_reference_1" reference="x_snc_trackit_stock_location" type="reference"/>
+        <element attributes="encode_utf8=false" label="location item" max_length="32" name="u_reference_2" reference="x_snc_trackit_stock_location_items" reference_qual="javascript:&quot;stock_location_parent=&quot; + current.u_reference_1" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="New URL" max_length="1024" name="u_url_1" type="url"/>
+        <index name="index">
+            <element name="u_reference_2"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_1"/>
+        </index>
+    </element>
+</database>

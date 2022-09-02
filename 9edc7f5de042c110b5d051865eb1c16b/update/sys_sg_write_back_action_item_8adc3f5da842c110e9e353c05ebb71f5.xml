@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script/>
+        <name>Request item</name>
+        <parameter_screen display_value="Request item">42dc3f5d4442c110087980b46c410bfa</parameter_screen>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:06</sys_created_on>
+        <sys_id>8adc3f5da842c110e9e353c05ebb71f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request item</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_8adc3f5da842c110e9e353c05ebb71f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:06</sys_updated_on>
+        <table>x_snc_trackit_inventory_request</table>
+        <template>stock_location={{Input: stock_location}}^requested_item={{Input: name}}^request_date={{Input: request_date}}^return_date={{Input: return_date}}^count={{Input: count}}^comments={{Input: comments}}^EQ</template>
+        <type>new</type>
+        <use_current_record_as_condition>true</use_current_record_as_condition>
+        <use_fields_for_ref_lookup>false</use_fields_for_ref_lookup>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=8adc3f5da842c110e9e353c05ebb71f5"/>
+</record_update>

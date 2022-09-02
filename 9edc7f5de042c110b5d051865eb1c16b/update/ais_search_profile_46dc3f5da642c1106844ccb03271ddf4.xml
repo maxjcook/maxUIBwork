@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile">
+    <ais_search_profile action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <genius_result_assembly/>
+        <label>Inventory Tracker Portal Search Profile</label>
+        <name>x_snc_trackit.inventory_tracker_sear</name>
+        <publish_id>383ef32b-2c16-4918-ac8d-c9fda89e3e61</publish_id>
+        <state>PUBLISHED</state>
+        <sys_class_name>ais_search_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:04</sys_created_on>
+        <sys_id>46dc3f5da642c1106844ccb03271ddf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory Tracker Portal Search Profile</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>ais_search_profile_46dc3f5da642c1106844ccb03271ddf4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:04</sys_updated_on>
+    </ais_search_profile>
+</record_update>

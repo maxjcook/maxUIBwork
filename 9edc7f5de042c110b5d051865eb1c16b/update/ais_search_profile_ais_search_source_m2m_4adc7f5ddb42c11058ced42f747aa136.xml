@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <profile display_value="Inventory Tracker Portal Search Profile">46dc3f5da642c1106844ccb03271ddf4</profile>
+        <search_source display_value="Inventory Control ">c2dc7f5d6442c110cf24046ad9d6c135</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:27</sys_created_on>
+        <sys_id>4adc7f5ddb42c11058ced42f747aa136</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory Tracker Portal Search Profile.</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_4adc7f5ddb42c11058ced42f747aa136</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:27</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

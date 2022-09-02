@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config/>
+        <description/>
+        <fields>table,sysId</fields>
+        <icon/>
+        <name>max portal record default Taxonomy Topic Selection Modal</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Record">d26d144d97df85101d7f796e6253af90</parent_macroponent>
+        <parent_macroponent_composition_element_id>modalContainerViewport</parent_macroponent_composition_element_id>
+        <route_type>taxonomy-topic-selection</route_type>
+        <screen_type display_value="Taxonomy Topic Selection Screen">529bbc9fc7622010fedf0bcbe2c2605c</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:49:38</sys_created_on>
+        <sys_id>676d544d97df85101d7f796e6253afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>max portal record default Taxonomy Topic Selection Modal</sys_name>
+        <sys_package display_value="Content Taxonomy" source="com.snc.taxonomy">b818ba2561180110c0a0df2cd71e2d01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_app_route_676d544d97df85101d7f796e6253afc5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:49:38</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=676d544d97df85101d7f796e6253afc5"/>
+</record_update>

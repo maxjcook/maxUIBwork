@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_navigation_tab_map">
+    <sys_sg_navigation_tab_map action="INSERT_OR_UPDATE">
+        <navigation display_value="Now Mobile Nav">9f67848187403300e0ef0cf888cb0b2e</navigation>
+        <navigation_tab display_value="Inventory">86dc3f5d5c42c11007f006abf2f0eff5</navigation_tab>
+        <order>5</order>
+        <sys_class_name>sys_sg_navigation_tab_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:24</sys_created_on>
+        <sys_id>46dc3f5d3642c110a60bd47c3b31b8ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_sg_navigation_tab_map_46dc3f5d3642c110a60bd47c3b31b8ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:24</sys_updated_on>
+    </sys_sg_navigation_tab_map>
+</record_update>

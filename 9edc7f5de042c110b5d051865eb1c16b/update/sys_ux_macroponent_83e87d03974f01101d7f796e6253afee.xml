@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "form_1",
+  "elementLabel" : "Form 1",
+  "propertyValues" : {
+    "sections" : {
+      "type" : "DATA_OUTPUT_BINDING",
+      "binding" : {
+        "address" : [ "glide_form_1", "nowRecordFormBlob", "sections" ]
+      }
+    },
+    "fields" : {
+      "type" : "DATA_OUTPUT_BINDING",
+      "binding" : {
+        "address" : [ "glide_form_1", "nowRecordFormBlob", "fields" ]
+      }
+    },
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_snc_trackit_max_s_table"
+    },
+    "sysId" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "view" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "forcedViewName" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "isSectionMenuHidden" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "disableCollapse" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "config" : {
+      "type" : "JSON_LITERAL",
+      "value" : "{ \"showActivityStream\": false, }"
+    },
+    "serializedChanges" : {
+      "type" : "JSON_LITERAL",
+      "value" : [ ]
+    },
+    "encodedRecord" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "isNewRecord" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "scrollableHost" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "inUiBuilder" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "userSession" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "user" ],
+        "category" : "session"
+      }
+    },
+    "formMessages" : {
+      "type" : "JSON_LITERAL",
+      "value" : [ ]
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "cdf8d604a3fda59e69ccd6dd407263d6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "dc6e87a5232200100e4bc50947bf654b",
+    "type" : "CLIENT_STATE"
+  },
+  "elementId" : "glide_form_1",
+  "elementLabel" : "Glide Form 1",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_snc_trackit_max_s_table"
+    },
+    "sysId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "sysId" ],
+        "category" : "props"
+      }
+    },
+    "actionConfigId" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "headerConfigId" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "ribbonConfigId" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "viewRuleConfigId" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "highlightedValueConfigId" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "view" : {
+      "type" : "JSON_LITERAL",
+      "value" : "default view"
+    },
+    "forcedViewName" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "query" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "showActivityStreamInDetails" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "detailsContext" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "activityLogs" ],
+        "category" : "props"
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <dispatched_events/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events>31d594c197df85101d7f796e6253afa0</handled_events>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "root" : null,
+    "rules" : {"flex-flow":"row nowrap","align-items":"stretch","min-height":"400px","height":"100%"},
+    "styles" : null,
+    "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
+    "type" : "flex"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Max's Table</name>
+        <props>[ {
+  "name" : "sysId",
+  "label" : "sysId",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false
+} ]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-28 15:21:31</sys_created_on>
+        <sys_id>83e87d03974f01101d7f796e6253afee</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Max's Table</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_macroponent_83e87d03974f01101d7f796e6253afee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:28:55</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

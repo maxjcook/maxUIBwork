@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action">
+    <sys_ux_form_action action="INSERT_OR_UPDATE">
+        <action_type>declarative_action</action_type>
+        <active>true</active>
+        <declarative_action display_value="DISCONTINUE_ITEM">46dc7f5da442c110878c46167d919f38</declarative_action>
+        <description/>
+        <name>Discontinue item</name>
+        <specificity>10</specificity>
+        <sys_class_name>sys_ux_form_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:26:41</sys_created_on>
+        <sys_id>42dc7f5d6242c11000c9429e616e932e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Discontinue item</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_form_action_42dc7f5d6242c11000c9429e616e932e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:26:41</sys_updated_on>
+        <table>x_snc_trackit_inventory_control</table>
+        <ui_action/>
+    </sys_ux_form_action>
+</record_update>

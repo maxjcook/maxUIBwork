@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-04 21:25:55</sys_created_on>
+        <sys_id>46dc3f5dcc42c1109c4db222ebf937f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_security_acl display_value="x_snc_trackit_stock_location">c6dc3f5d4e42c1108be2b199576ee8f1</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_46dc3f5dcc42c1109c4db222ebf937f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-04 21:25:55</sys_updated_on>
+        <sys_user_role display_value="x_snc_trackit.employee" name="x_snc_trackit.employee">c2dc7f5dcd42c110721dc91a333cb745</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
