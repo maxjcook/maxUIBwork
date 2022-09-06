@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_trackit.Max data row view</api_name>
+        <description>use on public page to display rows of data, instead of related list. the list components don't seem to work on public pages. </description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Max data row view</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input){
+	
+var items =
+        {
+            "template": "now-card-evam-record",
+            "propValues": {
+                "textHeaderLabel": "This is header label",
+                "titleLabel": "Title label",
+                "subtitle": "subtitle",
+                "detailValueOne": "detailValue one",
+                "detailValueTwo": "detailValue two",
+                "detailValueThree": "detailValue three",
+                "detailValueFour": "this is 4th I added",
+                "detailLabelOne": "detail one label",
+                "detailLabelTwo": "detail two label",
+                "detailLabelThree": "detail three label",
+                "detailLabelFour": "detail four label",
+                "mainActions": [
+                    {
+                        "assignmentId": "42fd3e5273511010c342d5fdbdf6a70e",
+                        "name": "activate_user",
+                        "label": "Activate",
+                        "actionType": "server_script",
+                        "icon": "Button",
+                        "buttonType": "primary",
+                        "actionDispatch": "",
+                        "serverScript": "current.active = true;\ncurrent.update();",
+                        "confirmationRequired": false,
+                        "confirmationMessage": "",
+                        "actionPayload": "",
+                        "actionPayloadMap": []
+                    },
+                    {
+                        "assignmentId": "e3a173c073151010c342d5fdbdf6a7a2",
+                        "name": "call_number",
+                        "label": "Call Number",
+                        "actionType": "uxf_client_action",
+                        "icon": "",
+                        "buttonType": "primary",
+                        "actionDispatch": "HOME_PHONE_CALL",
+                        "serverScript": "",
+                        "confirmationRequired": false,
+                        "confirmationMessage": "",
+                        "actionPayload": {
+                            "phoneNumber": ""
+                        }
+                    }
+                ],
+                "clickAction": {
+                    "assignmentId": "d46f400473211010c342d5fdbdf6a7cf",
+                    "name": "navigation",
+                    "label": "Navigation",
+                    "actionType": "uxf_client_action",
+                    "icon": "",
+                    "buttonType": "primary",
+                    "actionDispatch": "NAVIGATION",
+                    "serverScript": "",
+                    "confirmationRequired": false,
+                    "confirmationMessage": "",
+                    "actionPayload": {
+                        "table": "sys_user",
+                        "sysId": "1832fbe1d701120035ae23c7ce610369",
+                        "url": ""
+                    }
+                },
+                "model": {
+                    "name": "Manifah Masood",
+                    "email": "manifah.masood@example.com",
+                    "avatar": "ab490666c312120048f4d5dc64d3aee8.iix",
+                    "mobile_phone": "",
+                    "time_zone": "Europe/London",
+                    "title": "Vice President",
+                    "photo": "1792fbe1d701120035ae23c7ce6103e4.iix",
+                    "user_name": "manifah.masood",
+                    "location.name": "",
+                    "company.name": "",
+                    "department.name": "Development",
+                    "sysId": "1832fbe1d701120035ae23c7ce610369",
+                    "sys_id": "1832fbe1d701120035ae23c7ce610369",
+                    "table": "sys_user"
+                }
+            },
+            "buttonType": "primary",
+            "actionDispatch": "NAVIGATION",
+            "serverScript": "",
+            "confirmationRequired": false,
+            "confirmationMessage": "",
+            "actionPayload": {
+                "table": "sc_cat_item",
+                "sysId": "f514e9e64fcf42c0bde324af0210c766",
+                "url": ""
+            },
+            "model": {
+                "name": "OS X Mavericks",
+                "price": "$0.00",
+                "category.title": "Software",
+                "vendor.name": "",
+                "icon": "0f823d404f889200086eeed18110c70f.iix",
+                "picture": "616db9444f889200086eeed18110c70e.iix",
+                "short_description": "OS X Mavericks (version 10.9.x) is Apple's tenth\n\t\t\tmajor release of OS X, for Macs\n\t\t",
+                "model.display_name": "",
+                "sys_class_name": "Catalog Item",
+                "delivery_time": "2 Days",
+                "sysId": "f514e9e64fcf42c0bde324af0210c766",
+                "sys_id": "f514e9e64fcf42c0bde324af0210c766",
+                "table": "sc_cat_item"
+            }
+        }
+
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-06 13:03:45</sys_created_on>
+        <sys_id>52f080d187fdd910d2e60d05dabb357b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Max data row view</sys_name>
+        <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_52f080d187fdd910d2e60d05dabb357b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-06 13:03:45</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=52f080d187fdd910d2e60d05dabb357b"/>
+</record_update>

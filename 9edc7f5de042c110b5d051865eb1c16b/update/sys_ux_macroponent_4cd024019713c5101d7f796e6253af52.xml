@@ -932,7 +932,7 @@
         },
         "level" : {
           "type" : "JSON_LITERAL",
-          "value" : "1"
+          "value" : "2"
         },
         "variant" : {
           "type" : "JSON_LITERAL",
@@ -961,11 +961,12 @@
       "isHero" : false,
       "isNonDestructive" : false,
       "styles" : {
+        "text-align" : "center",
         "background-color" : "darkseagreen",
         "color" : "rgb(248, 246, 246)",
         "background" : "rgb(var(--now-color--neutral-0))",
-        "align-self" : "center",
         "flex" : "none",
+        "align-self" : "center",
         "width" : "60%",
         "padding" : "var(--now-static-space--md)",
         "box-shadow" : "var(--now-static-drop-shadow--md)",
@@ -1698,7 +1699,7 @@
       "overrides" : null,
       "isHidden" : {
         "type" : "JSON_LITERAL",
-        "value" : null
+        "value" : true
       },
       "isHero" : false,
       "isNonDestructive" : false,
@@ -1781,13 +1782,13 @@
         },
         "table" : {
           "type" : "JSON_LITERAL",
-          "value" : "x_snc_trackit_stock_location"
+          "value" : "x_snc_trackit_stock_location_items"
         },
         "listTitle" : {
           "type" : "TRANSLATION_LITERAL",
           "value" : {
             "code" : null,
-            "message" : "Stock Locations",
+            "message" : "Stock Items",
             "comment" : ""
           }
         },
@@ -2097,7 +2098,7 @@
           "type" : "TRANSLATION_LITERAL",
           "value" : {
             "code" : null,
-            "message" : "This is a dataset component",
+            "message" : "This is a dataset component title",
             "comment" : ""
           }
         },
@@ -2107,7 +2108,7 @@
         },
         "titleStyleVariant" : {
           "type" : "JSON_LITERAL",
-          "value" : "header-tertiary"
+          "value" : "header-secondary"
         },
         "data" : {
           "type" : "JSON_LITERAL",
@@ -2135,124 +2136,78 @@
             "items" : [ {
               "template" : "now-card-evam-record",
               "propValues" : {
-                "highlightedHeaderLabel" : "Vice President",
-                "textHeaderLabel" : "Development",
-                "titleLabel" : "Manifah Masood",
-                "imageURL" : "1792fbe1d701120035ae23c7ce6103e4.iix",
-                "subtitle" : "manifah.masood",
-                "subtitleAvatarName" : "Manifah Masood",
-                "subtitleAvatarURL" : "ab490666c312120048f4d5dc64d3aee8.iix",
-                "detailValueOne" : "manifah.masood@example.com",
-                "detailValueTwo" : "",
-                "detailValueThree" : "",
-                "highlightedHeaderIcon" : "clock-outline",
-                "highlightedHeaderBkgColor" : "moderate",
-                "subtitleIcon" : "calendar-fill",
-                "imageType" : "image",
-                "subtitleImageType" : "avatar",
-                "detailLabelOne" : "Email address",
-                "detailLabelTwo" : "Works for",
-                "detailLabelThree" : "Location/address",
-                "mainActions" : [ {
-                  "assignmentId" : "42fd3e5273511010c342d5fdbdf6a70e",
-                  "name" : "activate_user",
-                  "label" : "Activate",
-                  "actionType" : "server_script",
-                  "icon" : "Button",
-                  "buttonType" : "primary",
-                  "actionDispatch" : "",
-                  "serverScript" : "current.active = true;\ncurrent.update();",
-                  "confirmationRequired" : false,
-                  "confirmationMessage" : "",
-                  "actionPayload" : "",
-                  "actionPayloadMap" : [ ]
-                }, {
-                  "assignmentId" : "e3a173c073151010c342d5fdbdf6a7a2",
-                  "name" : "call_number",
-                  "label" : "Call Number",
-                  "actionType" : "uxf_client_action",
-                  "icon" : "",
-                  "buttonType" : "primary",
-                  "actionDispatch" : "HOME_PHONE_CALL",
-                  "serverScript" : "",
-                  "confirmationRequired" : false,
-                  "confirmationMessage" : "",
-                  "actionPayload" : {
-                    "phoneNumber" : ""
-                  }
-                } ],
-                "clickAction" : {
-                  "assignmentId" : "d46f400473211010c342d5fdbdf6a7cf",
-                  "name" : "navigation",
-                  "label" : "Navigation",
-                  "actionType" : "uxf_client_action",
-                  "icon" : "",
-                  "buttonType" : "primary",
-                  "actionDispatch" : "NAVIGATION",
-                  "serverScript" : "",
-                  "confirmationRequired" : false,
-                  "confirmationMessage" : "",
-                  "actionPayload" : {
-                    "table" : "sys_user",
-                    "sysId" : "1832fbe1d701120035ae23c7ce610369",
-                    "url" : ""
-                  }
-                },
-                "model" : {
-                  "name" : "Manifah Masood",
-                  "email" : "manifah.masood@example.com",
-                  "avatar" : "ab490666c312120048f4d5dc64d3aee8.iix",
-                  "mobile_phone" : "",
-                  "time_zone" : "Europe/London",
-                  "title" : "Vice President",
-                  "photo" : "1792fbe1d701120035ae23c7ce6103e4.iix",
-                  "user_name" : "manifah.masood",
-                  "location.name" : "",
-                  "company.name" : "",
-                  "department.name" : "Development",
-                  "sysId" : "1832fbe1d701120035ae23c7ce610369",
-                  "sys_id" : "1832fbe1d701120035ae23c7ce610369",
-                  "table" : "sys_user"
-                }
-              },
-              "buttonType" : "primary",
-              "actionDispatch" : "NAVIGATION",
-              "serverScript" : "",
-              "confirmationRequired" : false,
-              "confirmationMessage" : "",
-              "actionPayload" : {
-                "table" : "sc_cat_item",
-                "sysId" : "f514e9e64fcf42c0bde324af0210c766",
-                "url" : ""
-              },
-              "model" : {
-                "name" : "OS X Mavericks",
-                "price" : "$0.00",
-                "category.title" : "Software",
-                "vendor.name" : "",
-                "icon" : "0f823d404f889200086eeed18110c70f.iix",
-                "picture" : "616db9444f889200086eeed18110c70e.iix",
-                "short_description" : "OS X Mavericks (version 10.9.x) is Apple's tenth\n\t\t\tmajor release of OS X, for Macs\n\t\t",
-                "model.display_name" : "",
-                "sys_class_name" : "Catalog Item",
-                "delivery_time" : "2 Days",
-                "sysId" : "f514e9e64fcf42c0bde324af0210c766",
-                "sys_id" : "f514e9e64fcf42c0bde324af0210c766",
-                "table" : "sc_cat_item"
+                "textHeaderLabel" : "This is header label",
+                "titleLabel" : "Title label",
+                "subtitle" : "subtitle",
+                "detailValueOne" : "detailValue one",
+                "detailValueTwo" : "detailValue two",
+                "detailValueThree" : "detailValue three",
+                "detailValueFour" : "this is 4th I added",
+                "detailLabelOne" : "detail one label",
+                "detailLabelTwo" : "detail two label",
+                "detailLabelThree" : "detail three label",
+                "detailLabelFour" : "detail four label"
               }
-            } ],
-            "available_filters" : [ {
-              "sys_id" : "",
-              "label" : "Default"
             }, {
-              "sys_id" : "c10d1e42737e10108d991e666bf6a761",
-              "label" : "Active entities"
+              "template" : "now-card-evam-record",
+              "propValues" : {
+                "textHeaderLabel" : "This is 2nd row header label",
+                "titleLabel" : "Title label",
+                "subtitle" : " subtitle",
+                "detailValueOne" : "detailValue one",
+                "detailValueTwo" : "detailValue two",
+                "detailValueThree" : "detailValue three",
+                "detailValueFour" : "this is 4th I added",
+                "detailLabelOne" : "detail one label",
+                "detailLabelTwo" : "detail two label",
+                "detailLabelThree" : "detail three label",
+                "detailLabelFour" : "detail four label"
+              }
             }, {
-              "sys_id" : "808ed682737e10108d991e666bf6a793",
-              "label" : "Assigned to me"
+              "template" : "now-card-evam-record",
+              "propValues" : {
+                "textHeaderLabel" : "This is 3rd row header label",
+                "titleLabel" : "Title label",
+                "subtitle" : " subtitle",
+                "detailValueOne" : "detailValue one",
+                "detailValueTwo" : "detailValue two",
+                "detailValueThree" : "detailValue three",
+                "detailValueFour" : "this is 4th I added",
+                "detailLabelOne" : "detail one label",
+                "detailLabelTwo" : "detail two label",
+                "detailLabelThree" : "detail three label",
+                "detailLabelFour" : "detail four label"
+              }
             }, {
-              "sys_id" : "1213fb41733210108d991e666bf6a77a",
-              "label" : "Recently updated"
+              "template" : "now-card-evam-record",
+              "propValues" : {
+                "textHeaderLabel" : "This is 4th row header label",
+                "titleLabel" : "Title label",
+                "subtitle" : " subtitle",
+                "detailValueOne" : "detailValue one",
+                "detailValueTwo" : "detailValue two",
+                "detailValueThree" : "detailValue three",
+                "detailValueFour" : "this is 4th I added",
+                "detailLabelOne" : "detail one label",
+                "detailLabelTwo" : "detail two label",
+                "detailLabelThree" : "detail three label",
+                "detailLabelFour" : "detail four label"
+              }
+            }, {
+              "template" : "now-card-evam-record",
+              "propValues" : {
+                "textHeaderLabel" : "This is 5thd row header label",
+                "titleLabel" : "Title label",
+                "subtitle" : " subtitle",
+                "detailValueOne" : "detailValue one",
+                "detailValueTwo" : "detailValue two",
+                "detailValueThree" : "detailValue three",
+                "detailValueFour" : "this is 4th I added",
+                "detailLabelOne" : "detail one label",
+                "detailLabelTwo" : "detail two label",
+                "detailLabelThree" : "detail three label",
+                "detailLabelFour" : "detail four label"
+              }
             } ]
           }
         },
@@ -2314,7 +2269,12 @@
       },
       "isHero" : false,
       "isNonDestructive" : false,
-      "styles" : { }
+      "styles" : {
+        "max-width" : "initial",
+        "flex" : "none",
+        "padding" : "var(--now-static-space--lg)",
+        "margin" : "var(--now-static-space--lg)"
+      }
     }, {
       "elementId" : "list__related_1",
       "elementLabel" : "List - Related 1",
@@ -2513,15 +2473,333 @@
       "isHero" : false,
       "isNonDestructive" : false,
       "styles" : { }
+    }, {
+      "elementId" : "list_2",
+      "elementLabel" : "List 2",
+      "propertyValues" : {
+        "menuSelection" : {
+          "type" : "JSON_LITERAL",
+          "value" : "Select menu to connect..."
+        },
+        "table" : {
+          "type" : "JSON_LITERAL",
+          "value" : "task"
+        },
+        "listTitle" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "All Active Tasks",
+            "comment" : ""
+          }
+        },
+        "selectedListId" : {
+          "type" : "JSON_LITERAL",
+          "value" : "Select..."
+        },
+        "fixedQuery" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "query" : {
+          "type" : "JSON_LITERAL",
+          "value" : "active=true"
+        },
+        "view" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "columns" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "groupByField" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "maxColumns" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "limit" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "actionConfigId" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "hideDeclarativeActions" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "highlightedValueConfigId" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "hideHighlightedValues" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideHeader" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "headerSize" : {
+          "type" : "JSON_LITERAL",
+          "value" : "md"
+        },
+        "headingLevel" : {
+          "type" : "JSON_LITERAL",
+          "value" : 1
+        },
+        "hideTitle" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideTitleRowCount" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideRefreshButton" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideLastRefreshedText" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideMenuButton" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideOptionToSaveAs" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideListSharing" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideFilterPanel" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hidePanelFooter" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hidePanelRestore" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hidePanelAdvanced" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hidePanelConditionDelete" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "listMenuOpen" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideQuickEdit" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideSelectAll" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideCheckboxHover" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideRowSelector" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideUnnecessaryRowSelectors" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideColumnGrouping" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideColumnResizing" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideColumnFiltering" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideColumnSorting" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hidePersonalization" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideColumnReorder" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideDotwalk" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideDragDrop" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideCellFilter" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideInlineEditing" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideHighlightContent" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "highlightContent" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "patterns" : [ ],
+            "color" : ""
+          }
+        },
+        "hideLinks" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "overrideWordWrapUserPref" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "wordWrap" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "maxCharLimit" : {
+          "type" : "JSON_LITERAL",
+          "value" : 4000
+        },
+        "isRefList" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideEmptyStateImage" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hidePagination" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hidePages" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideRange" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideRowCount" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hidePreviousPage" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideFirstPage" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideLastPage" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideNextPage" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideLimitSelector" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "tiny" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "error" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "selectedRecords" : {
+          "type" : "JSON_LITERAL",
+          "value" : [ ]
+        },
+        "refreshRequested" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "page" : {
+          "type" : "JSON_LITERAL",
+          "value" : 1
+        },
+        "recordSelectedTable" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "recordSelectedSysId" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "recordSelectedQuery" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "recordSelectedView" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "daClientActionContract" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : null,
+      "definition" : {
+        "id" : "66ee7d86e81f696c9f9be19d8424cc0d",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "isNonDestructive" : false,
+      "styles" : { }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"list_1","styles":{}},{"element_id":"data_set_1","styles":{}},{"element_id":"list__related_1","styles":{}}],
+        "items" : [{"element_id":"list_2","styles":{}},{"element_id":"data_set_1","styles":{}},{"element_id":"list_1","styles":{}},{"element_id":"list__related_1","styles":{}}],
         "root" : null,
         "rules" : null,
-        "styles" : {"flex-direction":"column"},
+        "styles" : {"flex-direction":"column","gap":"var(--now-static-space--lg)","margin":"var(--now-static-space--sm)"},
         "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
         "type" : "flex"
       },
@@ -2535,8 +2813,13 @@
   "isHero" : false,
   "isNonDestructive" : false,
   "styles" : {
-    "width" : "100%",
-    "align-self" : "flex-start"
+    "width" : "80%",
+    "align-self" : "flex-start",
+    "border-color" : "RGB(var(--now-color--neutral-5))",
+    "border-width" : "var(--now-static-space--xxs)",
+    "border-style" : "id",
+    "border-radius" : "var(--now-static-border-radius--lg)",
+    "box-shadow" : "var(--now-static-drop-shadow--md)"
   }
 } ]</composition>
         <da_relay_models/>
@@ -2762,7 +3045,7 @@
     "items" : [{"element_id":"container_9","styles":{}},{"element_id":"input_1","styles":{}},{"element_id":"input_2","styles":{}},{"element_id":"container_10","styles":{}}],
     "root" : null,
     "rules" : null,
-    "styles" : {"flex-flow":"row nowrap","align-items":"stretch","min-height":"400px","height":"100%","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","justify-content":"flex-start","width":"","background":"rgb(var(--now-color--neutral-0))","flex-direction":"column"},
+    "styles" : {"flex-flow":"row nowrap","align-items":"center","min-height":"400px","height":"100%","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","justify-content":"space-evenly","width":"","background":"rgb(var(--now-color--neutral-0))","flex-direction":"column","margin":"var(--now-static-space--lg)"},
     "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
     "type" : "flex"
   },
@@ -2799,16 +3082,10 @@
   "message" : "123 Fake Street",
   "comment" : ""
 }, {
-  "message" : "Activate",
-  "comment" : ""
-}, {
-  "message" : "Active entities",
-  "comment" : ""
-}, {
   "message" : "Address",
   "comment" : ""
 }, {
-  "message" : "Assigned to me",
+  "message" : "All Active Tasks",
   "comment" : ""
 }, {
   "message" : "Call Number",
@@ -2818,9 +3095,6 @@
   "comment" : ""
 }, {
   "message" : "Custom ok",
-  "comment" : ""
-}, {
-  "message" : "Default",
   "comment" : ""
 }, {
   "message" : "Departments",
@@ -2859,9 +3133,6 @@
   "message" : "No content to display",
   "comment" : ""
 }, {
-  "message" : "Recently updated",
-  "comment" : ""
-}, {
   "message" : "Reference Qualifier Field",
   "comment" : ""
 }, {
@@ -2871,10 +3142,10 @@
   "message" : "Scott",
   "comment" : ""
 }, {
-  "message" : "Stock Locations",
+  "message" : "Stock Items",
   "comment" : ""
 }, {
-  "message" : "This is a dataset component",
+  "message" : "This is a dataset component title",
   "comment" : ""
 }, {
   "message" : "submit me",
@@ -2969,13 +3240,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-04 14:04:25</sys_created_on>
         <sys_id>4cd024019713c5101d7f796e6253af52</sys_id>
-        <sys_mod_count>296</sys_mod_count>
+        <sys_mod_count>332</sys_mod_count>
         <sys_name>max no record template</sys_name>
         <sys_package display_value="TrackIT" source="x_snc_trackit">9edc7f5de042c110b5d051865eb1c16b</sys_package>
         <sys_policy/>
         <sys_scope display_value="TrackIT">9edc7f5de042c110b5d051865eb1c16b</sys_scope>
         <sys_update_name>sys_ux_macroponent_4cd024019713c5101d7f796e6253af52</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-08-29 20:42:46</sys_updated_on>
+        <sys_updated_on>2022-09-06 14:40:20</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
